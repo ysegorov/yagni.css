@@ -1,0 +1,57 @@
+:root {
+
+    --font-size-base: 16px;
+
+    --font-size-tiny: .5rem;
+    --font-size-tiny-xl: .5625rem;
+    --font-size-tiny-xxl: .625rem;
+    --font-size-tiny-xxxl: .6875rem;
+    --font-size-small: .75rem;
+    --font-size-small-xl: .8125rem;
+    --font-size-small-xxl: .875rem;
+    --font-size-small-xxxl: .9375rem;
+    --font-size-normal: 1rem;
+    --font-size-normal-xl: 1.125rem;
+    --font-size-normal-xxl: 1.25rem;
+    --font-size-normal-xxxl: 1.375rem;
+    --font-size-medium: 1.5rem;
+    --font-size-medium-xl: 1.625rem;
+    --font-size-medium-xxl: 1.75rem;
+    --font-size-medium-xxxl: 1.875rem;
+    --font-size-large: 2rem;
+    --font-size-large-xl: 2.25rem;
+    --font-size-large-xxl: 2.5rem;
+    --font-size-large-xxxl: 2.75rem;
+    --font-size-huge: 3rem;
+    --font-size-huge-xl: 3.5rem;
+    --font-size-huge-xxl: 4rem;
+
+    --line-height-tiny: 1;
+    --line-height-small: 1.1;
+    --line-height-normal: 1.2;
+    --line-height-medium: 1.4;
+    --line-height-large: 1.5;
+    --line-height-huge: 2;
+    --line-height-huge-xl: 2.5;
+    --line-height-huge-xxl: 3;
+
+    --line-height-base: var(--line-height-normal);
+
+    --font-family-sans: -apple-system, BlinkMacSystemFont,
+                        'avenir next', avenir,
+                        'source sans pro',
+                        'pt sans',
+                        'helvetica neue', helvetica,
+                        ubuntu,
+                        roboto, noto,
+                        'segoe ui', arial,
+                        sans-serif;
+
+    --font-family-serif: 'pt serif', serif;
+
+    --font-family-mono: consolas, monaco, monospace;
+
+    --font-family-base: var(--font-family-sans);
+    --font-family-alternative: var(--font-family-serif);
+
+}
