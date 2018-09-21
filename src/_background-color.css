@@ -74,7 +74,7 @@
 .bg-gray-240 { background-color: var(--gray-240); }
 
 .bg-red           { background-color: var(--red); }
-.bg-orange        { background-color: var(-orange); }
+.bg-orange        { background-color: var(--orange); }
 .bg-yellow        { background-color: var(--yellow); }
 .bg-yellow-green  { background-color: var(--yellow-green); }
 .bg-green         { background-color: var(--green); }
