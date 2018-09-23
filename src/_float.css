@@ -1,0 +1,14 @@
+
+.fl-left   { float: left; }
+.fl-right  { float: right; }
+.fl-none   { float: none; }
+
+.cl-left   { clear: left; }
+.cl-right  { clear: right; }
+.cl-both   { clear: both; }
+.cl-none   { clear: none; }
+
+.clearfix  { *zoom: 1; }
+.clearfix:before,
+.clearfix:after { content: ' '; display: table; }
+.clearfix:after { clear: both; }
