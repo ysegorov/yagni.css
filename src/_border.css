@@ -11,11 +11,17 @@
 .bs-dotted { border-style: dotted; }
 .bs-none   { border-style: none; }
 
+.bw-0      { border-width: 0px; }
 .bw-1      { border-width: 1px; }
 .bw-2      { border-width: 2px; }
 .bw-3      { border-width: 3px; }
 .bw-4      { border-width: 4px; }
 .bw-5      { border-width: 5px; }
+
+.btw-0     { border-top-width: 0; }
+.bbw-0     { border-bottom-width: 0; }
+.blw-0     { border-left-width: 0; }
+.brw-0     { border-right-width: 0; }
 
 .bc-transparent  { border-color: transparent; }
 .bc-white        { border-color: var(--white); }
