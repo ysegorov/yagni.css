@@ -37,6 +37,10 @@
 
     --line-height-base: var(--line-height-normal);
 
+    --letter-spacing-tight: -.1em;
+    --letter-spacing-compact: .1em;
+    --letter-spacing-spread: .25em;
+
     --font-family-sans: -apple-system, BlinkMacSystemFont,
                         'avenir next', avenir,
                         'source sans pro',
@@ -47,9 +51,9 @@
                         'segoe ui', arial,
                         sans-serif;
 
-    --font-family-serif: 'pt serif', serif;
+    --font-family-serif: 'pt serif', georgia, times, serif;
 
-    --font-family-mono: consolas, monaco, monospace;
+    --font-family-mono: 'pt mono', consolas, monaco, monospace;
 
     --font-family-base: var(--font-family-sans);
     --font-family-alternative: var(--font-family-serif);

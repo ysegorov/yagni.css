@@ -6,26 +6,65 @@
 .text-center   { text-align: center; }
 .text-left     { text-align: left; }
 .text-right    { text-align: right; }
+.text-justify  { text-align: justify; }
 
+.text-normal     { font-style: normal; }
 .text-italic     { font-style: italic; }
-.text-capitalize { text-transform: capitalize; }
-.text-underline  { text-decoration: underline; }
+
+.text-normalcase  { text-transform: none; }
+.text-lowercase   { text-transform: lowercase; }
+.text-uppercase   { text-transform: uppercase; }
+.text-capitalize  { text-transform: capitalize; }
+
+.text-strike        { text-decoration: line-through; }
+.text-underline     { text-decoration: underline; }
+.text-no-underline  { text-decoration: none; }
 
 .text-compact    { letter-spacing: -.05em; }
 
-.nowrap { white-space: nowrap; }
+.ws-normal  { white-space: normal; }
+.ws-nowrap  { white-space: nowrap; }
+.ws-pre     { white-space: pre; }
 
-.fw-bold        { font-weight: 700; }
+.wb-normal  { word-break: normal; }
+.wb-break   { word-break: break-all; }
+.wb-keep    { word-break: keep-all; }
+
+.fw-tiny        { font-weight: 200; }
+.fw-small       { font-weight: 300; }
+.fw-normal      { font-weight: 400; }
+.fw-medium      { font-weight: 500; }
 .fw-semi-bold   { font-weight: 600; }
-.fw-normal:     { font-weight: 400; }
+.fw-bold        { font-weight: 700; }
 
-.fs-zero      { font-size: 0; }
-.fs-tiny      { font-size: var(--font-size-tiny); }
-.fs-small     { font-size: var(--font-size-small); }
-.fs-normal    { font-size: var(--font-size-normal); }
-.fs-medium    { font-size: var(--font-size-medium); }
-.fs-large     { font-size: var(--font-size-large); }
-.fs-huge      { font-size: var(--font-size-huge); }
+.fs-zero         { font-size: 0; }
+.fs-base         { font-size: var(--font-size-base); }
+
+.fs-tiny         { font-size: var(--font-size-tiny); }
+.fs-tiny-xl      { font-size: var(--font-size-tiny-xl); }
+.fs-tiny-xxl     { font-size: var(--font-size-tiny-xxl); }
+.fs-tiny-xxxl    { font-size: var(--font-size-tiny-xxxl); }
+.fs-small        { font-size: var(--font-size-small); }
+.fs-small-xl     { font-size: var(--font-size-small-xl); }
+.fs-small-xxl    { font-size: var(--font-size-small-xxl); }
+.fs-small-xxxl   { font-size: var(--font-size-small-xxxl); }
+.fs-normal       { font-size: var(--font-size-normal); }
+.fs-normal-xl    { font-size: var(--font-size-normal-xl); }
+.fs-normal-xxl   { font-size: var(--font-size-normal-xxl); }
+.fs-normal-xxxl  { font-size: var(--font-size-normal-xxxl); }
+.fs-medium       { font-size: var(--font-size-medium); }
+.fs-medium-xl    { font-size: var(--font-size-medium-xl); }
+.fs-medium-xxl   { font-size: var(--font-size-medium-xxl); }
+.fs-medium-xxxl  { font-size: var(--font-size-medium-xxxl); }
+.fs-large        { font-size: var(--font-size-large); }
+.fs-large-xl     { font-size: var(--font-size-large-xl); }
+.fs-large-xxl    { font-size: var(--font-size-large-xxl); }
+.fs-large-xxxl   { font-size: var(--font-size-large-xxxl); }
+.fs-huge         { font-size: var(--font-size-huge); }
+.fs-huge-xl      { font-size: var(--font-size-huge-xl); }
+.fs-huge-xxl     { font-size: var(--font-size-huge-xxl); }
+
+.lh-base      { line-height: var(--line-height-normal); }
 
 .lh-tiny      { line-height: var(--line-height-tiny); }
 .lh-small     { line-height: var(--line-height-small); }
@@ -35,3 +74,7 @@
 .lh-huge      { line-height: var(--line-height-huge); }
 .lh-huge-xl   { line-height: var(--line-height-huge-xl); }
 .lh-huge-xxl  { line-height: var(--line-height-huge-xxl); }
+
+.ls-tight     { letter-spacing: var(--letter-spacing-tight); }
+.ls-compact   { letter-spacing: var(--letter-spacing-compact); }
+.ls-spread    { letter-spacing: var(--letter-spacing-spread); }
