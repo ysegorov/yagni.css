@@ -26,12 +26,6 @@
 .fixed    { position: fixed; }
 .static   { position: static; }
 
-.left        { float: left; }
-.right       { float: right; }
-.clear-left  { clear: left; }
-.clear-right { clear: right; }
-.clear       { clear: both; }
-
 .va-baseline    { vertical-align: baseline; }
 .va-middle      { vertical-align: middle; }
 .va-top         { vertical-align: top; }
