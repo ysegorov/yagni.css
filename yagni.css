@@ -8,6 +8,7 @@
 @import './src/_background-size';
 @import './src/_border';
 @import './src/_float';
-@import './src/_flexbox.css';
-@import './src/_link.css';
-@import './src/_list.css';
+@import './src/_flexbox';
+@import './src/_link';
+@import './src/_list';
+@import './src/_opacity';
