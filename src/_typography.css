@@ -20,7 +20,9 @@
 .text-underline     { text-decoration: underline; }
 .text-no-underline  { text-decoration: none; }
 
-.text-compact    { letter-spacing: -.05em; }
+.text-tight     { letter-spacing: var(--letter-spacing-tight); }
+.text-compact   { letter-spacing: var(--letter-spacing-compact); }
+.text-spread    { letter-spacing: var(--letter-spacing-spread); }
 
 .ws-normal  { white-space: normal; }
 .ws-nowrap  { white-space: nowrap; }
@@ -74,7 +76,3 @@
 .lh-huge      { line-height: var(--line-height-huge); }
 .lh-huge-xl   { line-height: var(--line-height-huge-xl); }
 .lh-huge-xxl  { line-height: var(--line-height-huge-xxl); }
-
-.ls-tight     { letter-spacing: var(--letter-spacing-tight); }
-.ls-compact   { letter-spacing: var(--letter-spacing-compact); }
-.ls-spread    { letter-spacing: var(--letter-spacing-spread); }
