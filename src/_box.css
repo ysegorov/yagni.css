@@ -36,9 +36,17 @@
 .va-text-bottom { vertical-align: text-bottom; }
 
 .of-auto      { overflow: auto; }
-.of-x-auto    { overflow-x: auto; }
-.of-y-auto    { overflow-y: auto; }
 .of-hidden    { overflow: hidden; }
+.of-visible   { overflow: visible; }
+.of-scroll    { overflow: scroll; }
+.of-x-auto      { overflow-x: auto; }
+.of-x-hidden    { overflow-x: hidden; }
+.of-x-visible   { overflow-x: visible; }
+.of-x-scroll    { overflow-x: scroll; }
+.of-y-auto      { overflow-y: auto; }
+.of-y-hidden    { overflow-y: hidden; }
+.of-y-visible   { overflow-y: visible; }
+.of-y-scroll    { overflow-y: scroll; }
 
 .top-0      { top: 0; }
 .left-0     { left: 0; }
