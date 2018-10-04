@@ -1,0 +1,36 @@
+
+.outline-none { outline: none; }
+
+.os-none      { outline-style: none; }
+.os-auto      { outline-style: auto; }
+.os-dotted    { outline-style: dotted; }
+.os-dashed    { outline-style: dashed; }
+.os-solid     { outline-style: solid; }
+.os-double    { outline-style: double; }
+.os-groove    { outline-style: groove; }
+.os-ridge     { outline-style: ridge; }
+.os-inset     { outline-style: inset; }
+.os-outset    { outline-style: outset; }
+
+.ow-0    { outline-width: 0; }
+.ow-1    { outline-width: 1px; }
+.ow-2    { outline-width: 2px; }
+.ow-3    { outline-width: 3px; }
+.ow-4    { outline-width: 4px; }
+.ow-5    { outline-width: 5px; }
+
+.oc-transparent  { outline-color: transparent; }
+.oc-white        { outline-color: var(--white); }
+.oc-black        { outline-color: var(--black); }
+.oc-red          { outline-color: var(--red); }
+.oc-orange       { outline-color: var(--orange); }
+.oc-yellow       { outline-color: var(--yellow); }
+.oc-yellow-green { outline-color: var(--yellow-green); }
+.oc-green        { outline-color: var(--green); }
+.oc-green-cyan   { outline-color: var(--green-cyan); }
+.oc-cyan         { outline-color: var(--cyan); }
+.oc-cyan-blue    { outline-color: var(--cyan-blue); }
+.oc-blue         { outline-color: var(--blue); }
+.oc-blue-magenta { outline-color: var(--blue-magenta); }
+.oc-magenta      { outline-color: var(--magenta); }
+.oc-magenta-red  { outline-color: var(--magenta-red); }
