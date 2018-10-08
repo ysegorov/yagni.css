@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "yagni.css - collection of atomic css declarations to be embedded to your project using postcss",
   "main": "yagni.css",
+  "files": [
+      "yagni.css",
+      "src",
+      "UNLICENSE"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
