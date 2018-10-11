@@ -1,6 +1,6 @@
 {
   "name": "yagni.css",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "yagni.css - collection of atomic css declarations to be embedded to your project using postcss",
   "main": "yagni.css",
   "files": [
