@@ -4,9 +4,9 @@
   "description": "yagni.css - collection of atomic css declarations to be embedded to your project using postcss",
   "main": "yagni.css",
   "files": [
-      "yagni.css",
-      "src",
-      "UNLICENSE"
+    "yagni.css",
+    "src",
+    "UNLICENSE"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -34,9 +34,9 @@
     "postcss": "^7.0.5",
     "postcss-cli": "^6.0.0",
     "postcss-color-function": "^4.0.1",
-    "postcss-color-gray": "^4.1.0",
+    "postcss-color-gray": "^5.0.0",
     "postcss-color-hwb": "^3.0.0",
-    "postcss-custom-properties": "^8.0.8",
+    "postcss-css-variables": "^0.11.0",
     "postcss-discard-comments": "^4.0.1",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-import": "^12.0.0",
