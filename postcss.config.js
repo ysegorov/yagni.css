@@ -12,7 +12,6 @@ var plugins = [
   require('postcss-css-variables')({
     preserve: false
   }),
-  require('postcss-color-gray')(),
   require('postcss-color-hwb')(),
   require('postcss-color-function')(),
   require('postcss-flexbugs-fixes')(),
