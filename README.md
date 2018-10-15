@@ -74,7 +74,7 @@ var plugins = [
     ]
   }),
   require('postcss-mixins')(),
-  require('postcss-custom-properties')({
+  require('postcss-css-variables')({
     preserve: false
   }),
   require('postcss-color-hwb')(),
