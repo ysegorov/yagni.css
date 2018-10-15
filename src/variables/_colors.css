@@ -61,21 +61,21 @@
     --white-98: color(var(--white) a(98%));
     --white-99: color(var(--white) a(99%));
 
-    --gray-016: gray(16);
-    --gray-032: gray(32);
-    --gray-048: gray(48);
-    --gray-064: gray(64);
-    --gray-080: gray(80);
-    --gray-096: gray(96);
-    --gray-112: gray(112);
-    --gray-128: gray(128);
-    --gray-144: gray(144);
-    --gray-160: gray(160);
-    --gray-176: gray(176);
-    --gray-192: gray(192);
-    --gray-208: gray(208);
-    --gray-224: gray(224);
-    --gray-240: gray(240);
+    --gray-016: rgb(16, 16, 16);
+    --gray-032: rgb(32, 32, 32);
+    --gray-048: rgb(48, 48, 48);
+    --gray-064: rgb(64, 64, 64);
+    --gray-080: rgb(80, 80, 80);
+    --gray-096: rgb(96, 96, 96);
+    --gray-112: rgb(112, 112, 112);
+    --gray-128: rgb(128, 128, 128);
+    --gray-144: rgb(144, 144, 144);
+    --gray-160: rgb(160, 160, 160);
+    --gray-176: rgb(176, 176, 176);
+    --gray-192: rgb(192, 192, 192);
+    --gray-208: rgb(208, 208, 208);
+    --gray-224: rgb(224, 224, 224);
+    --gray-240: rgb(240, 240, 240);
 
     --red: hwb(0, 40%, 0%);
     --red-01: color(var(--red) a(1%));
