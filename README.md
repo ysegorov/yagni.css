@@ -10,7 +10,7 @@ Install peer dependencies using `yarn`:
 
 ```shell
 
-$ yarn add --dev postcss postcss-cli postcss-color-function postcss-color-gray postcss-color-hwb postcss-css-variables postcss-discard-comments postcss-flexbugs-fixes postcss-import postcss-mixins postcss-reporter cssnano autoprefixer
+$ yarn add --dev postcss postcss-cli postcss-color-function postcss-color-hwb postcss-custom-properties postcss-discard-comments postcss-flexbugs-fixes postcss-import postcss-mixins postcss-reporter cssnano autoprefixer
 
 ```
 
@@ -53,7 +53,7 @@ Create `variables.css` file with customized variables values:
 
 :root {
 
-    --red: rgb(255, 0, 0);
+    --color-red: rgb(255, 0, 0);
 
 }
 
@@ -74,10 +74,9 @@ var plugins = [
     ]
   }),
   require('postcss-mixins')(),
-  require('postcss-css-variables')({
+  require('postcss-custom-properties')({
     preserve: false
   }),
-  require('postcss-color-gray')(),
   require('postcss-color-hwb')(),
   require('postcss-color-function')(),
   require('postcss-flexbugs-fixes')(),
