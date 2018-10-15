@@ -9,7 +9,7 @@ var plugins = [
     // ]
   }),
   require('postcss-mixins')(),
-  require('postcss-css-variables')({
+  require('postcss-custom-properties')({
     preserve: false
   }),
   require('postcss-color-hwb')(),
