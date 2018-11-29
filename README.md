@@ -14,11 +14,19 @@ $ yarn add --dev postcss postcss-cli postcss-color-function postcss-color-hwb po
 
 ```
 
-Install `normalize.css` and `sanitize.css` (optionally):
+Install `normalize.css` or `sanitize.css` (optionally):
 
 ```shell
 
-$ yarn add --dev normalize.css sanitize.css
+$ yarn add --dev normalize.css
+
+```
+
+or
+
+```shell
+
+$ yarn add --dev sanitize.css
 
 ```
 
@@ -37,11 +45,17 @@ Create `project.css` file for your project with the following content:
 
 ```css
 
-@import 'normalize';
-@import 'sanitize';
+/* uncomment line below to include normalize.css to bundle */
+/* @import 'normalize'; */
+
+/* uncomment line below to include sanitize.css to bundle */
+/* @import 'sanitize'; */
+
 @import 'yagni';
+
 /* optionally overwrite yagni.css variables values if needed */
 @import './variables';
+
 /* optionally add some custom rules */
 /* @import './customization'; */
 
@@ -68,8 +82,10 @@ var debug = process.env.NODE_ENV === 'development';
 var plugins = [
   require('postcss-import')({
     path: [
-      'node_modules/normalize.css/',
-      'node_modules/sanitize.css/',
+      // uncomment search path below to be able to include normalize.css to bundle
+      // 'node_modules/normalize.css/',
+      // uncomment search path below to be able to include sanitize.css to bundle
+      // 'node_modules/sanitize.css/',
       'node_modules/yagni.css/',
     ]
   }),
