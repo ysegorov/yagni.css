@@ -25,6 +25,7 @@
 .relative { position: relative; }
 .fixed    { position: fixed; }
 .static   { position: static; }
+.sticky   { position: sticky; }
 
 .va-baseline    { vertical-align: baseline; }
 .va-middle      { vertical-align: middle; }
