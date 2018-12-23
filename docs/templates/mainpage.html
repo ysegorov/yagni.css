@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% import "helpers.html" as helpers %}
+
+{% block title %}{{ config.title }}{% endblock %}
+
+{% block content %}
+<div class="sticky top-0 flex flex-justify-between flex-items-center bg-gray-048">
+    <h1 class="pl-normal m-zero lh-huge">
+        <a class="block white fs-medium text-center text-uppercase text-compact text-no-underline fw-bold " href="#">
+            <span>yagni.css</span>
+            <span class="fs-small-xxl text-lowercase letter-spacing-normal">reference</span>
+        </a>
+    </h1>
+    <div class="p-small text-right">
+        <a class="link ib" rel="noopener" href="https://www.npmjs.com/package/yagni.css">
+            <img src="https://img.shields.io/npm/v/yagni.css.svg?style=flat-square&colorB=lightgrey">
+        </a>
+        <a class="link ib" rel="noopener" href="http://unlicense.org/">
+            <img src="https://img.shields.io/npm/l/yagni.css.svg?style=flat-square&colorB=lightgrey">
+        </a>
+        <a class="link ib" rel="noopener" href="https://github.com/ysegorov/yagni.css">
+            <img src="https://img.shields.io/badge/github-sources-lightgrey.svg?style=flat-square&logo=github&logoColor=white">
+        </a>
+    </div>
+</div>
+<div class="flex bg-gray-240">
+    <div class="non-flexy bg-gray-048">
+        <div class="sticky top-3r">
+            {{ helpers.nav('Variables', config.sources.variables) }}
+            {{ helpers.nav('Declarations', config.sources.declarations) }}
+        </div>
+    </div>
+    <div class="flexy ml-large maxw-42">
+        <h2>Variables</h2>
+        {% for file in config.sources.variables %}
+        {{ helpers.css(file) }}
+        {% endfor %}
+        <h2>Declarations</h2>
+        {% for file in config.sources.declarations %}
+        {{ helpers.css(file) }}
+        {% endfor %}
+    </div>
+</div>
+<div class="fixed right-0 bottom-0 pl-normal pr-normal pt-small pb-small fs-small black-20">
+    <span>Made with</span>
+    <a class="black-20" href="https://ysegorov.github.io/wt/" rel="noopener">wt</a>
+</div>
+{% endblock %}
+
+{% block body_js %}{% endblock %}
+{% block ga %}{% endblock %}

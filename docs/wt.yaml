@@ -1,0 +1,93 @@
+---
+title: yagni.css reference
+url: https://ysegorov.github.io/yagni.css
+baseurl: /yagni.css
+author: Yuri Egorov
+
+verify:
+    links: true
+
+build:
+    output: output/
+    static: true
+    feed: false
+
+templates:
+    mainpage: mainpage.html
+    post: content.html
+    page: content.html
+
+directories:
+    static: static/
+
+jinja:
+    extensions:
+      - jinja2.ext.i18n
+      - jinja2.ext.do
+      - jinja2.ext.loopcontrols
+      - jinja2.ext.with_
+      - jinja2.ext.autoescape
+
+sources:
+  variables:
+    - src: variables/_colors.css
+      title: Colors
+    - src: variables/_box.css
+      title: Box
+    - src: variables/_sizes.css
+      title: Sizes
+    - src: variables/_spacing.css
+      title: Spacing
+    - src: variables/_forms.css
+      title: Forms
+    - src: variables/_typography.css
+      title: Typography
+  declarations:
+    - src: _color.css
+      title: Colors
+      colors: true
+      color_names:
+        - red
+        - orange
+        - yellow
+        - yellow-green
+        - green
+        - green-cyan
+        - cyan
+        - cyan-blue
+        - blue
+        - blue-magenta
+        - magenta
+        - magenta-red
+    - src: _background-color.css
+      title: Background colors
+    - src: _background-position.css
+      title: Background position
+    - src: _background-size.css
+      title: Background size
+    - src: _border.css
+      title: Borders
+    - src: _box.css
+      title: Box
+    - src: _flexbox.css
+      title: Flexbox
+    - src: _float.css
+      title: Floats
+    - src: _link.css
+      title: Links
+    - src: _list.css
+      title: Lists
+    - src: _opacity.css
+      title: Opacity
+    - src: _outline.css
+      title: Outline
+    - src: _spacing.css
+      title: Spacing
+    - src: _table.css
+      title: Tables
+    - src: _typography.css
+      title: Typography
+    - src: _z-index.css
+      title: Z-index
+
+...

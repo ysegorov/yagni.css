@@ -1,0 +1,38 @@
+
+{% macro nav(title, items) -%}
+<div>
+    <div class="pl-normal pr-normal pt-small pb-small fw-semi-bold white bg-gray-064">{{ title }}</div>
+    <ul class="ls-none mt-zero mb-normal p-zero fs-small-xxl">
+        {% for file in items %}
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src-{{ file.src|filename_to_id }}">{{ file.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{%- endmacro %}
+
+{% macro css(file) -%}
+<div>
+    <h3 id="src-{{ file.src|filename_to_id }}">{{ file.title }}</h3>
+    {% if file.colors %}
+    {% for name in file.color_names %}
+    <div class="flex fs-small">
+        <div class="p-small bg-{{ name }} b-bottom flex-basis-50">
+            <code>
+                {% set html='<div class="bg-' ~ name ~ '"></div>' %}
+                {{ html|e }}
+            </code>
+        </div>
+        <div class="p-small {{ name }} bg-black b-bottom flex-basis-50">
+            <code>
+                {% set html='<div class="' ~ name ~ '"></div>' %}
+                {{ html|e }}
+            </code>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    <pre class="lh-tiny m-zero fs-small"><code>
+{{ file.src|css_content|urlize }}
+    </code></pre>
+</div>
+{%- endmacro %}

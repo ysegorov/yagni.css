@@ -1,0 +1,2 @@
+web: wt develop
+css: postcss assets/style.css -d static/css/ --verbose --config ../postcss.config.js --watch --poll

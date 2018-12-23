@@ -1,1 +1,4 @@
 node_modules
+env
+docs/output
+docs/__pycache__
