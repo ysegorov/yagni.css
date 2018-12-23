@@ -1,0 +1,1824 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>yagni.css reference</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        
+
+        
+        <!-- Place favicon.ico in the root directory -->
+
+        
+        <link rel="stylesheet" href="/yagni.css/css/style.css?ts=1545552709">
+        
+    </head>
+    <body>
+        
+<div class="sticky top-0 flex flex-justify-between flex-items-center bg-gray-048">
+    <h1 class="pl-normal m-zero lh-huge">
+        <a class="block white fs-medium text-center text-uppercase text-compact text-no-underline fw-bold " href="#">
+            <span>yagni.css</span>
+            <span class="fs-small-xxl text-lowercase letter-spacing-normal">reference</span>
+        </a>
+    </h1>
+    <div class="p-small text-right">
+        <a class="link ib" rel="noopener" href="https://www.npmjs.com/package/yagni.css">
+            <img src="https://img.shields.io/npm/v/yagni.css.svg?style=flat-square&colorB=lightgrey">
+        </a>
+        <a class="link ib" rel="noopener" href="http://unlicense.org/">
+            <img src="https://img.shields.io/npm/l/yagni.css.svg?style=flat-square&colorB=lightgrey">
+        </a>
+        <a class="link ib" rel="noopener" href="https://github.com/ysegorov/yagni.css">
+            <img src="https://img.shields.io/badge/github-sources-lightgrey.svg?style=flat-square&logo=github&logoColor=white">
+        </a>
+    </div>
+</div>
+<div class="flex bg-gray-240">
+    <div class="non-flexy bg-gray-048">
+        <div class="sticky top-3r">
+            <div>
+    <div class="pl-normal pr-normal pt-small pb-small fw-semi-bold white bg-gray-064">Variables</div>
+    <ul class="ls-none mt-zero mb-normal p-zero fs-small-xxl">
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src-variables--colors">Colors</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src-variables--box">Box</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src-variables--sizes">Sizes</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src-variables--spacing">Spacing</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src-variables--forms">Forms</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src-variables--typography">Typography</a></li>
+        
+    </ul>
+</div>
+            <div>
+    <div class="pl-normal pr-normal pt-small pb-small fw-semi-bold white bg-gray-064">Declarations</div>
+    <ul class="ls-none mt-zero mb-normal p-zero fs-small-xxl">
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--color">Colors</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--background-color">Background colors</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--background-position">Background position</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--background-size">Background size</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--border">Borders</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--box">Box</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--flexbox">Flexbox</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--float">Floats</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--link">Links</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--list">Lists</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--opacity">Opacity</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--outline">Outline</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--spacing">Spacing</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--table">Tables</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--typography">Typography</a></li>
+        
+        <li><a class="block pl-medium pr-medium pt-tiny-xl pb-tiny-xl white-80 link" href="#src--z-index">Z-index</a></li>
+        
+    </ul>
+</div>
+        </div>
+    </div>
+    <div class="flexy ml-large maxw-42">
+        <h2>Variables</h2>
+        
+        <div>
+    <h3 id="src-variables--colors">Colors</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+/* <a href="https://en.wikipedia.org/wiki/HWB_color_model" rel="noopener">https://en.wikipedia.org/wiki/HWB_color_model</a> */
+/* <a href="http://www.workwithcolor.com/color-chart-full-01.htm" rel="noopener">http://www.workwithcolor.com/color-chart-full-01.htm</a> */
+
+:root {
+
+    --black: var(--color-black, #000);
+    --black-01: color(var(--black) a(1%));
+    --black-02: color(var(--black) a(2%));
+    --black-03: color(var(--black) a(3%));
+    --black-04: color(var(--black) a(4%));
+    --black-05: color(var(--black) a(5%));
+    --black-06: color(var(--black) a(6%));
+    --black-07: color(var(--black) a(7%));
+    --black-08: color(var(--black) a(8%));
+    --black-09: color(var(--black) a(9%));
+    --black-10: color(var(--black) a(10%));
+    --black-20: color(var(--black) a(20%));
+    --black-30: color(var(--black) a(30%));
+    --black-40: color(var(--black) a(40%));
+    --black-50: color(var(--black) a(50%));
+    --black-60: color(var(--black) a(60%));
+    --black-70: color(var(--black) a(70%));
+    --black-80: color(var(--black) a(80%));
+    --black-90: color(var(--black) a(90%));
+    --black-91: color(var(--black) a(91%));
+    --black-92: color(var(--black) a(92%));
+    --black-93: color(var(--black) a(93%));
+    --black-94: color(var(--black) a(94%));
+    --black-95: color(var(--black) a(95%));
+    --black-96: color(var(--black) a(96%));
+    --black-97: color(var(--black) a(97%));
+    --black-98: color(var(--black) a(98%));
+    --black-99: color(var(--black) a(99%));
+
+    --white: var(--color-white, #fff);
+    --white-01: color(var(--white) a(1%));
+    --white-02: color(var(--white) a(2%));
+    --white-03: color(var(--white) a(3%));
+    --white-04: color(var(--white) a(4%));
+    --white-05: color(var(--white) a(5%));
+    --white-06: color(var(--white) a(6%));
+    --white-07: color(var(--white) a(7%));
+    --white-08: color(var(--white) a(8%));
+    --white-09: color(var(--white) a(9%));
+    --white-10: color(var(--white) a(10%));
+    --white-20: color(var(--white) a(20%));
+    --white-30: color(var(--white) a(30%));
+    --white-40: color(var(--white) a(40%));
+    --white-50: color(var(--white) a(50%));
+    --white-60: color(var(--white) a(60%));
+    --white-70: color(var(--white) a(70%));
+    --white-80: color(var(--white) a(80%));
+    --white-90: color(var(--white) a(90%));
+    --white-91: color(var(--white) a(91%));
+    --white-92: color(var(--white) a(92%));
+    --white-93: color(var(--white) a(93%));
+    --white-94: color(var(--white) a(94%));
+    --white-95: color(var(--white) a(95%));
+    --white-96: color(var(--white) a(96%));
+    --white-97: color(var(--white) a(97%));
+    --white-98: color(var(--white) a(98%));
+    --white-99: color(var(--white) a(99%));
+
+    --gray-016: rgb(16, 16, 16);
+    --gray-032: rgb(32, 32, 32);
+    --gray-048: rgb(48, 48, 48);
+    --gray-064: rgb(64, 64, 64);
+    --gray-080: rgb(80, 80, 80);
+    --gray-096: rgb(96, 96, 96);
+    --gray-112: rgb(112, 112, 112);
+    --gray-128: rgb(128, 128, 128);
+    --gray-144: rgb(144, 144, 144);
+    --gray-160: rgb(160, 160, 160);
+    --gray-176: rgb(176, 176, 176);
+    --gray-192: rgb(192, 192, 192);
+    --gray-208: rgb(208, 208, 208);
+    --gray-224: rgb(224, 224, 224);
+    --gray-240: rgb(240, 240, 240);
+
+    --red: var(--color-red, hwb(0, 40%, 0%));
+    --red-01: color(var(--red) a(1%));
+    --red-02: color(var(--red) a(2%));
+    --red-03: color(var(--red) a(3%));
+    --red-04: color(var(--red) a(4%));
+    --red-05: color(var(--red) a(5%));
+    --red-06: color(var(--red) a(6%));
+    --red-07: color(var(--red) a(7%));
+    --red-08: color(var(--red) a(8%));
+    --red-09: color(var(--red) a(9%));
+    --red-10: color(var(--red) a(10%));
+    --red-20: color(var(--red) a(20%));
+    --red-30: color(var(--red) a(30%));
+    --red-40: color(var(--red) a(40%));
+    --red-50: color(var(--red) a(50%));
+    --red-60: color(var(--red) a(60%));
+    --red-70: color(var(--red) a(70%));
+    --red-80: color(var(--red) a(80%));
+    --red-90: color(var(--red) a(90%));
+    --red-91: color(var(--red) a(91%));
+    --red-92: color(var(--red) a(92%));
+    --red-93: color(var(--red) a(93%));
+    --red-94: color(var(--red) a(94%));
+    --red-95: color(var(--red) a(95%));
+    --red-96: color(var(--red) a(96%));
+    --red-97: color(var(--red) a(97%));
+    --red-98: color(var(--red) a(98%));
+    --red-99: color(var(--red) a(99%));
+
+    --orange: var(--color-orange, hwb(30, 40%, 0%));
+    --orange-01: color(var(--orange) a(1%));
+    --orange-02: color(var(--orange) a(2%));
+    --orange-03: color(var(--orange) a(3%));
+    --orange-04: color(var(--orange) a(4%));
+    --orange-05: color(var(--orange) a(5%));
+    --orange-06: color(var(--orange) a(6%));
+    --orange-07: color(var(--orange) a(7%));
+    --orange-08: color(var(--orange) a(8%));
+    --orange-09: color(var(--orange) a(9%));
+    --orange-10: color(var(--orange) a(10%));
+    --orange-20: color(var(--orange) a(20%));
+    --orange-30: color(var(--orange) a(30%));
+    --orange-40: color(var(--orange) a(40%));
+    --orange-50: color(var(--orange) a(50%));
+    --orange-60: color(var(--orange) a(60%));
+    --orange-70: color(var(--orange) a(70%));
+    --orange-80: color(var(--orange) a(80%));
+    --orange-90: color(var(--orange) a(90%));
+    --orange-91: color(var(--orange) a(91%));
+    --orange-92: color(var(--orange) a(92%));
+    --orange-93: color(var(--orange) a(93%));
+    --orange-94: color(var(--orange) a(94%));
+    --orange-95: color(var(--orange) a(95%));
+    --orange-96: color(var(--orange) a(96%));
+    --orange-97: color(var(--orange) a(97%));
+    --orange-98: color(var(--orange) a(98%));
+    --orange-99: color(var(--orange) a(99%));
+
+    --yellow: var(--color-yellow, hwb(60, 40%, 0%));
+    --yellow-01: color(var(--yellow) a(1%));
+    --yellow-02: color(var(--yellow) a(2%));
+    --yellow-03: color(var(--yellow) a(3%));
+    --yellow-04: color(var(--yellow) a(4%));
+    --yellow-05: color(var(--yellow) a(5%));
+    --yellow-06: color(var(--yellow) a(6%));
+    --yellow-07: color(var(--yellow) a(7%));
+    --yellow-08: color(var(--yellow) a(8%));
+    --yellow-09: color(var(--yellow) a(9%));
+    --yellow-10: color(var(--yellow) a(10%));
+    --yellow-20: color(var(--yellow) a(20%));
+    --yellow-30: color(var(--yellow) a(30%));
+    --yellow-40: color(var(--yellow) a(40%));
+    --yellow-50: color(var(--yellow) a(50%));
+    --yellow-60: color(var(--yellow) a(60%));
+    --yellow-70: color(var(--yellow) a(70%));
+    --yellow-80: color(var(--yellow) a(80%));
+    --yellow-90: color(var(--yellow) a(90%));
+    --yellow-91: color(var(--yellow) a(91%));
+    --yellow-92: color(var(--yellow) a(92%));
+    --yellow-93: color(var(--yellow) a(93%));
+    --yellow-94: color(var(--yellow) a(94%));
+    --yellow-95: color(var(--yellow) a(95%));
+    --yellow-96: color(var(--yellow) a(96%));
+    --yellow-97: color(var(--yellow) a(97%));
+    --yellow-98: color(var(--yellow) a(98%));
+    --yellow-99: color(var(--yellow) a(99%));
+
+    --yellow-green: var(--color-yellow-green, hwb(90, 40%, 0%));
+    --yellow-green-01: color(var(--yellow-green) a(1%));
+    --yellow-green-02: color(var(--yellow-green) a(2%));
+    --yellow-green-03: color(var(--yellow-green) a(3%));
+    --yellow-green-04: color(var(--yellow-green) a(4%));
+    --yellow-green-05: color(var(--yellow-green) a(5%));
+    --yellow-green-06: color(var(--yellow-green) a(6%));
+    --yellow-green-07: color(var(--yellow-green) a(7%));
+    --yellow-green-08: color(var(--yellow-green) a(8%));
+    --yellow-green-09: color(var(--yellow-green) a(9%));
+    --yellow-green-10: color(var(--yellow-green) a(10%));
+    --yellow-green-20: color(var(--yellow-green) a(20%));
+    --yellow-green-30: color(var(--yellow-green) a(30%));
+    --yellow-green-40: color(var(--yellow-green) a(40%));
+    --yellow-green-50: color(var(--yellow-green) a(50%));
+    --yellow-green-60: color(var(--yellow-green) a(60%));
+    --yellow-green-70: color(var(--yellow-green) a(70%));
+    --yellow-green-80: color(var(--yellow-green) a(80%));
+    --yellow-green-90: color(var(--yellow-green) a(90%));
+    --yellow-green-91: color(var(--yellow-green) a(91%));
+    --yellow-green-92: color(var(--yellow-green) a(92%));
+    --yellow-green-93: color(var(--yellow-green) a(93%));
+    --yellow-green-94: color(var(--yellow-green) a(94%));
+    --yellow-green-95: color(var(--yellow-green) a(95%));
+    --yellow-green-96: color(var(--yellow-green) a(96%));
+    --yellow-green-97: color(var(--yellow-green) a(97%));
+    --yellow-green-98: color(var(--yellow-green) a(98%));
+    --yellow-green-99: color(var(--yellow-green) a(99%));
+
+    --green: var(--color-green, hwb(120, 40%, 0%));
+    --green-01: color(var(--green) a(1%));
+    --green-02: color(var(--green) a(2%));
+    --green-03: color(var(--green) a(3%));
+    --green-04: color(var(--green) a(4%));
+    --green-05: color(var(--green) a(5%));
+    --green-06: color(var(--green) a(6%));
+    --green-07: color(var(--green) a(7%));
+    --green-08: color(var(--green) a(8%));
+    --green-09: color(var(--green) a(9%));
+    --green-10: color(var(--green) a(10%));
+    --green-20: color(var(--green) a(20%));
+    --green-30: color(var(--green) a(30%));
+    --green-40: color(var(--green) a(40%));
+    --green-50: color(var(--green) a(50%));
+    --green-60: color(var(--green) a(60%));
+    --green-70: color(var(--green) a(70%));
+    --green-80: color(var(--green) a(80%));
+    --green-90: color(var(--green) a(90%));
+    --green-91: color(var(--green) a(91%));
+    --green-92: color(var(--green) a(92%));
+    --green-93: color(var(--green) a(93%));
+    --green-94: color(var(--green) a(94%));
+    --green-95: color(var(--green) a(95%));
+    --green-96: color(var(--green) a(96%));
+    --green-97: color(var(--green) a(97%));
+    --green-98: color(var(--green) a(98%));
+    --green-99: color(var(--green) a(99%));
+
+    --green-cyan: var(--color-green-cyan, hwb(150, 40%, 0%));
+    --green-cyan-01: color(var(--green-cyan) a(1%));
+    --green-cyan-02: color(var(--green-cyan) a(2%));
+    --green-cyan-03: color(var(--green-cyan) a(3%));
+    --green-cyan-04: color(var(--green-cyan) a(4%));
+    --green-cyan-05: color(var(--green-cyan) a(5%));
+    --green-cyan-06: color(var(--green-cyan) a(6%));
+    --green-cyan-07: color(var(--green-cyan) a(7%));
+    --green-cyan-08: color(var(--green-cyan) a(8%));
+    --green-cyan-09: color(var(--green-cyan) a(9%));
+    --green-cyan-10: color(var(--green-cyan) a(10%));
+    --green-cyan-20: color(var(--green-cyan) a(20%));
+    --green-cyan-30: color(var(--green-cyan) a(30%));
+    --green-cyan-40: color(var(--green-cyan) a(40%));
+    --green-cyan-50: color(var(--green-cyan) a(50%));
+    --green-cyan-60: color(var(--green-cyan) a(60%));
+    --green-cyan-70: color(var(--green-cyan) a(70%));
+    --green-cyan-80: color(var(--green-cyan) a(80%));
+    --green-cyan-90: color(var(--green-cyan) a(90%));
+    --green-cyan-91: color(var(--green-cyan) a(91%));
+    --green-cyan-92: color(var(--green-cyan) a(92%));
+    --green-cyan-93: color(var(--green-cyan) a(93%));
+    --green-cyan-94: color(var(--green-cyan) a(94%));
+    --green-cyan-95: color(var(--green-cyan) a(95%));
+    --green-cyan-96: color(var(--green-cyan) a(96%));
+    --green-cyan-97: color(var(--green-cyan) a(97%));
+    --green-cyan-98: color(var(--green-cyan) a(98%));
+    --green-cyan-99: color(var(--green-cyan) a(99%));
+
+    --cyan: var(--color-cyan, hwb(180, 40%, 0%));
+    --cyan-01: color(var(--cyan) a(1%));
+    --cyan-02: color(var(--cyan) a(2%));
+    --cyan-03: color(var(--cyan) a(3%));
+    --cyan-04: color(var(--cyan) a(4%));
+    --cyan-05: color(var(--cyan) a(5%));
+    --cyan-06: color(var(--cyan) a(6%));
+    --cyan-07: color(var(--cyan) a(7%));
+    --cyan-08: color(var(--cyan) a(8%));
+    --cyan-09: color(var(--cyan) a(9%));
+    --cyan-10: color(var(--cyan) a(10%));
+    --cyan-20: color(var(--cyan) a(20%));
+    --cyan-30: color(var(--cyan) a(30%));
+    --cyan-40: color(var(--cyan) a(40%));
+    --cyan-50: color(var(--cyan) a(50%));
+    --cyan-60: color(var(--cyan) a(60%));
+    --cyan-70: color(var(--cyan) a(70%));
+    --cyan-80: color(var(--cyan) a(80%));
+    --cyan-90: color(var(--cyan) a(90%));
+    --cyan-91: color(var(--cyan) a(91%));
+    --cyan-92: color(var(--cyan) a(92%));
+    --cyan-93: color(var(--cyan) a(93%));
+    --cyan-94: color(var(--cyan) a(94%));
+    --cyan-95: color(var(--cyan) a(95%));
+    --cyan-96: color(var(--cyan) a(96%));
+    --cyan-97: color(var(--cyan) a(97%));
+    --cyan-98: color(var(--cyan) a(98%));
+    --cyan-99: color(var(--cyan) a(99%));
+
+    --cyan-blue: var(--color-cyan-blue, hwb(210, 40%, 0%));
+    --cyan-blue-01: color(var(--cyan-blue) a(1%));
+    --cyan-blue-02: color(var(--cyan-blue) a(2%));
+    --cyan-blue-03: color(var(--cyan-blue) a(3%));
+    --cyan-blue-04: color(var(--cyan-blue) a(4%));
+    --cyan-blue-05: color(var(--cyan-blue) a(5%));
+    --cyan-blue-06: color(var(--cyan-blue) a(6%));
+    --cyan-blue-07: color(var(--cyan-blue) a(7%));
+    --cyan-blue-08: color(var(--cyan-blue) a(8%));
+    --cyan-blue-09: color(var(--cyan-blue) a(9%));
+    --cyan-blue-10: color(var(--cyan-blue) a(10%));
+    --cyan-blue-20: color(var(--cyan-blue) a(20%));
+    --cyan-blue-30: color(var(--cyan-blue) a(30%));
+    --cyan-blue-40: color(var(--cyan-blue) a(40%));
+    --cyan-blue-50: color(var(--cyan-blue) a(50%));
+    --cyan-blue-60: color(var(--cyan-blue) a(60%));
+    --cyan-blue-70: color(var(--cyan-blue) a(70%));
+    --cyan-blue-80: color(var(--cyan-blue) a(80%));
+    --cyan-blue-90: color(var(--cyan-blue) a(90%));
+    --cyan-blue-91: color(var(--cyan-blue) a(91%));
+    --cyan-blue-92: color(var(--cyan-blue) a(92%));
+    --cyan-blue-93: color(var(--cyan-blue) a(93%));
+    --cyan-blue-94: color(var(--cyan-blue) a(94%));
+    --cyan-blue-95: color(var(--cyan-blue) a(95%));
+    --cyan-blue-96: color(var(--cyan-blue) a(96%));
+    --cyan-blue-97: color(var(--cyan-blue) a(97%));
+    --cyan-blue-98: color(var(--cyan-blue) a(98%));
+    --cyan-blue-99: color(var(--cyan-blue) a(99%));
+
+    --blue: var(--color-blue, hwb(240, 40%, 0%));
+    --blue-01: color(var(--blue) a(1%));
+    --blue-02: color(var(--blue) a(2%));
+    --blue-03: color(var(--blue) a(3%));
+    --blue-04: color(var(--blue) a(4%));
+    --blue-05: color(var(--blue) a(5%));
+    --blue-06: color(var(--blue) a(6%));
+    --blue-07: color(var(--blue) a(7%));
+    --blue-08: color(var(--blue) a(8%));
+    --blue-09: color(var(--blue) a(9%));
+    --blue-10: color(var(--blue) a(10%));
+    --blue-20: color(var(--blue) a(20%));
+    --blue-30: color(var(--blue) a(30%));
+    --blue-40: color(var(--blue) a(40%));
+    --blue-50: color(var(--blue) a(50%));
+    --blue-60: color(var(--blue) a(60%));
+    --blue-70: color(var(--blue) a(70%));
+    --blue-80: color(var(--blue) a(80%));
+    --blue-90: color(var(--blue) a(90%));
+    --blue-91: color(var(--blue) a(91%));
+    --blue-92: color(var(--blue) a(92%));
+    --blue-93: color(var(--blue) a(93%));
+    --blue-94: color(var(--blue) a(94%));
+    --blue-95: color(var(--blue) a(95%));
+    --blue-96: color(var(--blue) a(96%));
+    --blue-97: color(var(--blue) a(97%));
+    --blue-98: color(var(--blue) a(98%));
+    --blue-99: color(var(--blue) a(99%));
+
+    --blue-magenta: var(--color-blue-magenta, hwb(270, 40%, 0%));
+    --blue-magenta-01: color(var(--blue-magenta) a(1%));
+    --blue-magenta-02: color(var(--blue-magenta) a(2%));
+    --blue-magenta-03: color(var(--blue-magenta) a(3%));
+    --blue-magenta-04: color(var(--blue-magenta) a(4%));
+    --blue-magenta-05: color(var(--blue-magenta) a(5%));
+    --blue-magenta-06: color(var(--blue-magenta) a(6%));
+    --blue-magenta-07: color(var(--blue-magenta) a(7%));
+    --blue-magenta-08: color(var(--blue-magenta) a(8%));
+    --blue-magenta-09: color(var(--blue-magenta) a(9%));
+    --blue-magenta-10: color(var(--blue-magenta) a(10%));
+    --blue-magenta-20: color(var(--blue-magenta) a(20%));
+    --blue-magenta-30: color(var(--blue-magenta) a(30%));
+    --blue-magenta-40: color(var(--blue-magenta) a(40%));
+    --blue-magenta-50: color(var(--blue-magenta) a(50%));
+    --blue-magenta-60: color(var(--blue-magenta) a(60%));
+    --blue-magenta-70: color(var(--blue-magenta) a(70%));
+    --blue-magenta-80: color(var(--blue-magenta) a(80%));
+    --blue-magenta-90: color(var(--blue-magenta) a(90%));
+    --blue-magenta-91: color(var(--blue-magenta) a(91%));
+    --blue-magenta-92: color(var(--blue-magenta) a(92%));
+    --blue-magenta-93: color(var(--blue-magenta) a(93%));
+    --blue-magenta-94: color(var(--blue-magenta) a(94%));
+    --blue-magenta-95: color(var(--blue-magenta) a(95%));
+    --blue-magenta-96: color(var(--blue-magenta) a(96%));
+    --blue-magenta-97: color(var(--blue-magenta) a(97%));
+    --blue-magenta-98: color(var(--blue-magenta) a(98%));
+    --blue-magenta-99: color(var(--blue-magenta) a(99%));
+
+    --magenta: var(--color-magenta, hwb(300, 40%, 0%));
+    --magenta-01: color(var(--magenta) a(1%));
+    --magenta-02: color(var(--magenta) a(2%));
+    --magenta-03: color(var(--magenta) a(3%));
+    --magenta-04: color(var(--magenta) a(4%));
+    --magenta-05: color(var(--magenta) a(5%));
+    --magenta-06: color(var(--magenta) a(6%));
+    --magenta-07: color(var(--magenta) a(7%));
+    --magenta-08: color(var(--magenta) a(8%));
+    --magenta-09: color(var(--magenta) a(9%));
+    --magenta-10: color(var(--magenta) a(10%));
+    --magenta-20: color(var(--magenta) a(20%));
+    --magenta-30: color(var(--magenta) a(30%));
+    --magenta-40: color(var(--magenta) a(40%));
+    --magenta-50: color(var(--magenta) a(50%));
+    --magenta-60: color(var(--magenta) a(60%));
+    --magenta-70: color(var(--magenta) a(70%));
+    --magenta-80: color(var(--magenta) a(80%));
+    --magenta-90: color(var(--magenta) a(90%));
+    --magenta-91: color(var(--magenta) a(91%));
+    --magenta-92: color(var(--magenta) a(92%));
+    --magenta-93: color(var(--magenta) a(93%));
+    --magenta-94: color(var(--magenta) a(94%));
+    --magenta-95: color(var(--magenta) a(95%));
+    --magenta-96: color(var(--magenta) a(96%));
+    --magenta-97: color(var(--magenta) a(97%));
+    --magenta-98: color(var(--magenta) a(98%));
+    --magenta-99: color(var(--magenta) a(99%));
+
+    --magenta-red: var(--color-magenta-red, hwb(330, 40%, 0%));
+    --magenta-red-01: color(var(--magenta-red) a(1%));
+    --magenta-red-02: color(var(--magenta-red) a(2%));
+    --magenta-red-03: color(var(--magenta-red) a(3%));
+    --magenta-red-04: color(var(--magenta-red) a(4%));
+    --magenta-red-05: color(var(--magenta-red) a(5%));
+    --magenta-red-06: color(var(--magenta-red) a(6%));
+    --magenta-red-07: color(var(--magenta-red) a(7%));
+    --magenta-red-08: color(var(--magenta-red) a(8%));
+    --magenta-red-09: color(var(--magenta-red) a(9%));
+    --magenta-red-10: color(var(--magenta-red) a(10%));
+    --magenta-red-20: color(var(--magenta-red) a(20%));
+    --magenta-red-30: color(var(--magenta-red) a(30%));
+    --magenta-red-40: color(var(--magenta-red) a(40%));
+    --magenta-red-50: color(var(--magenta-red) a(50%));
+    --magenta-red-60: color(var(--magenta-red) a(60%));
+    --magenta-red-70: color(var(--magenta-red) a(70%));
+    --magenta-red-80: color(var(--magenta-red) a(80%));
+    --magenta-red-90: color(var(--magenta-red) a(90%));
+    --magenta-red-91: color(var(--magenta-red) a(91%));
+    --magenta-red-92: color(var(--magenta-red) a(92%));
+    --magenta-red-93: color(var(--magenta-red) a(93%));
+    --magenta-red-94: color(var(--magenta-red) a(94%));
+    --magenta-red-95: color(var(--magenta-red) a(95%));
+    --magenta-red-96: color(var(--magenta-red) a(96%));
+    --magenta-red-97: color(var(--magenta-red) a(97%));
+    --magenta-red-98: color(var(--magenta-red) a(98%));
+    --magenta-red-99: color(var(--magenta-red) a(99%));
+
+}
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src-variables--box">Box</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+:root {
+    --box-sizing: border-box;
+}
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src-variables--sizes">Sizes</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+:root {
+
+    --width-12: 12rem;
+    --width-18: 18rem;
+    --width-24: 24rem;
+    --width-30: 30rem;
+    --width-36: 36rem;
+    --width-40: 40rem;
+    --width-50: 50rem;
+
+    --full-height: 100vh;
+
+}
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src-variables--spacing">Spacing</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+:root {
+
+    --spacing-none: 0;
+    --spacing-tiny: 0.125rem;
+    --spacing-tiny-xl: 0.25rem;
+    --spacing-tiny-xxl: 0.375rem;
+    --spacing-small: 0.5rem;
+    --spacing-small-xl: 0.625rem;
+    --spacing-small-xxl: 0.75rem;
+    --spacing-small-xxxl: 0.875rem;
+    --spacing-normal: 1rem;
+    --spacing-normal-xl: 1.125rem;
+    --spacing-normal-xxl: 1.25rem;
+    --spacing-normal-xxxl: 1.375rem;
+    --spacing-medium: 1.5rem;
+    --spacing-medium-xl: 1.625rem;
+    --spacing-medium-xxl: 1.75rem;
+    --spacing-medium-xxxl: 1.875rem;
+    --spacing-large: 2rem;
+    --spacing-large-xl: 2.25rem;
+    --spacing-large-xxl: 2.5rem;
+    --spacing-large-xxxl: 2.75rem;
+    --spacing-huge: 3rem;
+    --spacing-huge-xl: 4rem;
+    --spacing-huge-xxl: 8rem;
+    --spacing-huge-xxxl: 16rem;
+
+    --spacing-em-tiny: 0.125em;
+    --spacing-em-tiny-xl: 0.25em;
+    --spacing-em-tiny-xxl: 0.375em;
+    --spacing-em-small: 0.5em;
+    --spacing-em-small-xl: 0.625em;
+    --spacing-em-small-xxl: 0.75em;
+    --spacing-em-small-xxxl: 0.875em;
+    --spacing-em-normal: 1em;
+    --spacing-em-normal-xl: 1.125em;
+    --spacing-em-normal-xxl: 1.25em;
+    --spacing-em-normal-xxxl: 1.375em;
+    --spacing-em-medium: 1.5em;
+    --spacing-em-medium-xl: 1.625em;
+    --spacing-em-medium-xxl: 1.75em;
+    --spacing-em-medium-xxxl: 1.875em;
+    --spacing-em-large: 2em;
+    --spacing-em-large-xl: 2.25em;
+    --spacing-em-large-xxl: 2.5em;
+    --spacing-em-large-xxxl: 2.75em;
+    --spacing-em-huge: 3em;
+    --spacing-em-huge-xl: 4em;
+    --spacing-em-huge-xxl: 8em;
+    --spacing-em-huge-xxxl: 16em;
+
+}
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src-variables--forms">Forms</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+:root {
+
+    --input-height: 2em;
+
+}
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src-variables--typography">Typography</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+:root {
+
+    --font-size-base: 16px;
+
+    --font-size-tiny: .5rem;
+    --font-size-tiny-xl: .5625rem;
+    --font-size-tiny-xxl: .625rem;
+    --font-size-tiny-xxxl: .6875rem;
+    --font-size-small: .75rem;
+    --font-size-small-xl: .8125rem;
+    --font-size-small-xxl: .875rem;
+    --font-size-small-xxxl: .9375rem;
+    --font-size-normal: 1rem;
+    --font-size-normal-xl: 1.125rem;
+    --font-size-normal-xxl: 1.25rem;
+    --font-size-normal-xxxl: 1.375rem;
+    --font-size-medium: 1.5rem;
+    --font-size-medium-xl: 1.625rem;
+    --font-size-medium-xxl: 1.75rem;
+    --font-size-medium-xxxl: 1.875rem;
+    --font-size-large: 2rem;
+    --font-size-large-xl: 2.25rem;
+    --font-size-large-xxl: 2.5rem;
+    --font-size-large-xxxl: 2.75rem;
+    --font-size-huge: 3rem;
+    --font-size-huge-xl: 3.5rem;
+    --font-size-huge-xxl: 4rem;
+
+    --line-height-tiny: 1;
+    --line-height-small: 1.1;
+    --line-height-normal: 1.2;
+    --line-height-medium: 1.4;
+    --line-height-large: 1.5;
+    --line-height-huge: 2;
+    --line-height-huge-xl: 2.5;
+    --line-height-huge-xxl: 3;
+
+    --line-height-base: var(--line-height-normal);
+
+    --letter-spacing-tight: -.1em;
+    --letter-spacing-compact: -.05em;
+    --letter-spacing-spread: .25em;
+
+    --font-family-sans: -apple-system, BlinkMacSystemFont,
+                        &#39;avenir next&#39;, avenir,
+                        &#39;source sans pro&#39;,
+                        &#39;pt sans&#39;,
+                        &#39;helvetica neue&#39;, helvetica,
+                        ubuntu,
+                        roboto, noto,
+                        &#39;segoe ui&#39;, arial,
+                        sans-serif;
+
+    --font-family-serif: &#39;pt serif&#39;, georgia, times, serif;
+
+    --font-family-mono: &#39;pt mono&#39;, consolas, monaco, monospace;
+
+    --font-family-base: var(--font-family-sans);
+    --font-family-alternative: var(--font-family-serif);
+
+}
+    </code></pre>
+</div>
+        
+        <h2>Declarations</h2>
+        
+        <div>
+    <h3 id="src--color">Colors</h3>
+    
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-red b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-red&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small red bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;red&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-orange b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-orange&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small orange bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;orange&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-yellow b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-yellow&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small yellow bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;yellow&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-yellow-green b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-yellow-green&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small yellow-green bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;yellow-green&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-green b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-green&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small green bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;green&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-green-cyan b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-green-cyan&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small green-cyan bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;green-cyan&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-cyan b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-cyan&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small cyan bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;cyan&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-cyan-blue b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-cyan-blue&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small cyan-blue bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;cyan-blue&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-blue b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-blue&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small blue bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;blue&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-blue-magenta b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-blue-magenta&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small blue-magenta bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;blue-magenta&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-magenta b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-magenta&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small magenta bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;magenta&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    <div class="flex fs-small">
+        <div class="p-small bg-magenta-red b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;bg-magenta-red&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+        <div class="p-small magenta-red bg-black b-bottom flex-basis-50">
+            <code>
+                
+                &lt;div class=&#34;magenta-red&#34;&gt;&lt;/div&gt;
+            </code>
+        </div>
+    </div>
+    
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.white    { color: var(--white); }
+.white-01 { color: var(--white-01); }
+.white-02 { color: var(--white-02); }
+.white-03 { color: var(--white-03); }
+.white-04 { color: var(--white-04); }
+.white-05 { color: var(--white-05); }
+.white-06 { color: var(--white-06); }
+.white-07 { color: var(--white-07); }
+.white-08 { color: var(--white-08); }
+.white-09 { color: var(--white-09); }
+.white-10 { color: var(--white-10); }
+.white-20 { color: var(--white-20); }
+.white-30 { color: var(--white-30); }
+.white-40 { color: var(--white-40); }
+.white-50 { color: var(--white-50); }
+.white-60 { color: var(--white-60); }
+.white-70 { color: var(--white-70); }
+.white-80 { color: var(--white-80); }
+.white-90 { color: var(--white-90); }
+.white-91 { color: var(--white-91); }
+.white-92 { color: var(--white-92); }
+.white-93 { color: var(--white-93); }
+.white-94 { color: var(--white-94); }
+.white-95 { color: var(--white-95); }
+.white-96 { color: var(--white-96); }
+.white-97 { color: var(--white-97); }
+.white-98 { color: var(--white-98); }
+.white-99 { color: var(--white-99); }
+
+.black    { color: var(--black); }
+.black-01 { color: var(--black-01); }
+.black-02 { color: var(--black-02); }
+.black-03 { color: var(--black-03); }
+.black-04 { color: var(--black-04); }
+.black-05 { color: var(--black-05); }
+.black-06 { color: var(--black-06); }
+.black-07 { color: var(--black-07); }
+.black-08 { color: var(--black-08); }
+.black-09 { color: var(--black-09); }
+.black-10 { color: var(--black-10); }
+.black-20 { color: var(--black-20); }
+.black-30 { color: var(--black-30); }
+.black-40 { color: var(--black-40); }
+.black-50 { color: var(--black-50); }
+.black-60 { color: var(--black-60); }
+.black-70 { color: var(--black-70); }
+.black-80 { color: var(--black-80); }
+.black-90 { color: var(--black-90); }
+.black-91 { color: var(--black-91); }
+.black-92 { color: var(--black-92); }
+.black-93 { color: var(--black-93); }
+.black-94 { color: var(--black-94); }
+.black-95 { color: var(--black-95); }
+.black-96 { color: var(--black-96); }
+.black-97 { color: var(--black-97); }
+.black-98 { color: var(--black-98); }
+.black-99 { color: var(--black-99); }
+
+.gray-016 { color: var(--gray-016); }
+.gray-032 { color: var(--gray-032); }
+.gray-048 { color: var(--gray-048); }
+.gray-064 { color: var(--gray-064); }
+.gray-080 { color: var(--gray-080); }
+.gray-096 { color: var(--gray-096); }
+.gray-112 { color: var(--gray-112); }
+.gray-128 { color: var(--gray-128); }
+.gray-144 { color: var(--gray-144); }
+.gray-160 { color: var(--gray-160); }
+.gray-176 { color: var(--gray-176); }
+.gray-192 { color: var(--gray-192); }
+.gray-208 { color: var(--gray-208); }
+.gray-224 { color: var(--gray-224); }
+.gray-240 { color: var(--gray-240); }
+
+.red           { color: var(--red); }
+.orange        { color: var(--orange); }
+.yellow        { color: var(--yellow); }
+.yellow-green  { color: var(--yellow-green); }
+.green         { color: var(--green); }
+.green-cyan    { color: var(--green-cyan); }
+.cyan          { color: var(--cyan); }
+.cyan-blue     { color: var(--cyan-blue); }
+.blue          { color: var(--blue); }
+.blue-magenta  { color: var(--blue-magenta); }
+.magenta       { color: var(--magenta); }
+.magenta-red   { color: var(--magenta-red); }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--background-color">Background colors</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.bg-white    { background-color: var(--white); }
+.bg-white-01 { background-color: var(--white-01); }
+.bg-white-02 { background-color: var(--white-02); }
+.bg-white-03 { background-color: var(--white-03); }
+.bg-white-04 { background-color: var(--white-04); }
+.bg-white-05 { background-color: var(--white-05); }
+.bg-white-06 { background-color: var(--white-06); }
+.bg-white-07 { background-color: var(--white-07); }
+.bg-white-08 { background-color: var(--white-08); }
+.bg-white-09 { background-color: var(--white-09); }
+.bg-white-10 { background-color: var(--white-10); }
+.bg-white-20 { background-color: var(--white-20); }
+.bg-white-30 { background-color: var(--white-30); }
+.bg-white-40 { background-color: var(--white-40); }
+.bg-white-50 { background-color: var(--white-50); }
+.bg-white-60 { background-color: var(--white-60); }
+.bg-white-70 { background-color: var(--white-70); }
+.bg-white-80 { background-color: var(--white-80); }
+.bg-white-90 { background-color: var(--white-90); }
+.bg-white-91 { background-color: var(--white-91); }
+.bg-white-92 { background-color: var(--white-92); }
+.bg-white-93 { background-color: var(--white-93); }
+.bg-white-94 { background-color: var(--white-94); }
+.bg-white-95 { background-color: var(--white-95); }
+.bg-white-96 { background-color: var(--white-96); }
+.bg-white-97 { background-color: var(--white-97); }
+.bg-white-98 { background-color: var(--white-98); }
+.bg-white-99 { background-color: var(--white-99); }
+
+.bg-black    { background-color: var(--black); }
+.bg-black-01 { background-color: var(--black-01); }
+.bg-black-02 { background-color: var(--black-02); }
+.bg-black-03 { background-color: var(--black-03); }
+.bg-black-04 { background-color: var(--black-04); }
+.bg-black-05 { background-color: var(--black-05); }
+.bg-black-06 { background-color: var(--black-06); }
+.bg-black-07 { background-color: var(--black-07); }
+.bg-black-08 { background-color: var(--black-08); }
+.bg-black-09 { background-color: var(--black-09); }
+.bg-black-10 { background-color: var(--black-10); }
+.bg-black-20 { background-color: var(--black-20); }
+.bg-black-30 { background-color: var(--black-30); }
+.bg-black-40 { background-color: var(--black-40); }
+.bg-black-50 { background-color: var(--black-50); }
+.bg-black-60 { background-color: var(--black-60); }
+.bg-black-70 { background-color: var(--black-70); }
+.bg-black-80 { background-color: var(--black-80); }
+.bg-black-90 { background-color: var(--black-90); }
+.bg-black-91 { background-color: var(--black-91); }
+.bg-black-92 { background-color: var(--black-92); }
+.bg-black-93 { background-color: var(--black-93); }
+.bg-black-94 { background-color: var(--black-94); }
+.bg-black-95 { background-color: var(--black-95); }
+.bg-black-96 { background-color: var(--black-96); }
+.bg-black-97 { background-color: var(--black-97); }
+.bg-black-98 { background-color: var(--black-98); }
+.bg-black-99 { background-color: var(--black-99); }
+
+.bg-gray-016 { background-color: var(--gray-016); }
+.bg-gray-032 { background-color: var(--gray-032); }
+.bg-gray-048 { background-color: var(--gray-048); }
+.bg-gray-064 { background-color: var(--gray-064); }
+.bg-gray-080 { background-color: var(--gray-080); }
+.bg-gray-096 { background-color: var(--gray-096); }
+.bg-gray-112 { background-color: var(--gray-112); }
+.bg-gray-128 { background-color: var(--gray-128); }
+.bg-gray-144 { background-color: var(--gray-144); }
+.bg-gray-160 { background-color: var(--gray-160); }
+.bg-gray-176 { background-color: var(--gray-176); }
+.bg-gray-192 { background-color: var(--gray-192); }
+.bg-gray-208 { background-color: var(--gray-208); }
+.bg-gray-224 { background-color: var(--gray-224); }
+.bg-gray-240 { background-color: var(--gray-240); }
+
+.bg-red           { background-color: var(--red); }
+.bg-orange        { background-color: var(--orange); }
+.bg-yellow        { background-color: var(--yellow); }
+.bg-yellow-green  { background-color: var(--yellow-green); }
+.bg-green         { background-color: var(--green); }
+.bg-green-cyan    { background-color: var(--green-cyan); }
+.bg-cyan          { background-color: var(--cyan); }
+.bg-cyan-blue     { background-color: var(--cyan-blue); }
+.bg-blue          { background-color: var(--blue); }
+.bg-blue-magenta  { background-color: var(--blue-magenta); }
+.bg-magenta       { background-color: var(--magenta); }
+.bg-magenta-red   { background-color: var(--magenta-red); }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--background-position">Background position</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.bg-center {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-right {
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.bg-left {
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.bg-top {
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.bg-bottom {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--background-size">Background size</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.bg-cover {
+    background-size: cover;
+}
+.bg-contain {
+    background-size: contain;
+}
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--border">Borders</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.b-none    { border: none; }
+.b-all     { border-width: 1px; border-style: solid; }
+.b-top     { border-top-width: 1px; border-top-style: solid; }
+.b-bottom  { border-bottom-width: 1px; border-bottom-style: solid; }
+.b-left    { border-left-width: 1px; border-left-style: solid; }
+.b-right   { border-right-width: 1px; border-right-style: solid; }
+
+.bs-solid  { border-style: solid; }
+.bs-dashed { border-style: dashed; }
+.bs-dotted { border-style: dotted; }
+.bs-none   { border-style: none; }
+
+.bw-0      { border-width: 0px; }
+.bw-1      { border-width: 1px; }
+.bw-2      { border-width: 2px; }
+.bw-3      { border-width: 3px; }
+.bw-4      { border-width: 4px; }
+.bw-5      { border-width: 5px; }
+
+.btw-0     { border-top-width: 0; }
+.bbw-0     { border-bottom-width: 0; }
+.blw-0     { border-left-width: 0; }
+.brw-0     { border-right-width: 0; }
+
+.bc-transparent  { border-color: transparent; }
+.bc-white        { border-color: var(--white); }
+.bc-black        { border-color: var(--black); }
+.bc-red          { border-color: var(--red); }
+.bc-orange       { border-color: var(--orange); }
+.bc-yellow       { border-color: var(--yellow); }
+.bc-yellow-green { border-color: var(--yellow-green); }
+.bc-green        { border-color: var(--green); }
+.bc-green-cyan   { border-color: var(--green-cyan); }
+.bc-cyan         { border-color: var(--cyan); }
+.bc-cyan-blue    { border-color: var(--cyan-blue); }
+.bc-blue         { border-color: var(--blue); }
+.bc-blue-magenta { border-color: var(--blue-magenta); }
+.bc-magenta      { border-color: var(--magenta); }
+.bc-magenta-red  { border-color: var(--magenta-red); }
+
+.br-circle  { border-radius: 50%; }
+.br-1       { border-radius: 1px; }
+.br-2       { border-radius: 2px; }
+.br-3       { border-radius: 3px; }
+.br-4       { border-radius: 4px; }
+.br-5       { border-radius: 5px; }
+.br-6       { border-radius: 6px; }
+.br-7       { border-radius: 7px; }
+.br-8       { border-radius: 8px; }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--box">Box</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.block  { display: block; }
+.inline { display: inline; }
+.ib     { display: inline-block; }
+
+.as-li      { display: list-item; }
+
+.as-table         { display: table; }
+.as-inline-table  { display: inline-table; }
+.as-tr            { display: table-row; }
+.as-td            { display: table-cell; }
+.as-col           { display: table-column; }
+.as-colgroup      { display: table-column-group; }
+.as-caption       { display: table-caption; }
+.as-thead         { display: table-header-group; }
+.as-tbody         { display: table-row-group; }
+.as-tfoot         { display: table-footer-group; }
+
+.is-hidden    { display: none; }
+
+.is-invisible { visibility: hidden; }
+.is-visible   { visibility: visible; }
+
+.absolute { position: absolute; }
+.relative { position: relative; }
+.fixed    { position: fixed; }
+.static   { position: static; }
+.sticky   { position: sticky; }
+
+.va-baseline    { vertical-align: baseline; }
+.va-middle      { vertical-align: middle; }
+.va-top         { vertical-align: top; }
+.va-bottom      { vertical-align: bottom; }
+.va-sub         { vertical-align: sub; }
+.va-super       { vertical-align: super; }
+.va-text-top    { vertical-align: text-top; }
+.va-text-bottom { vertical-align: text-bottom; }
+
+.of-auto        { overflow: auto; }
+.of-hidden      { overflow: hidden; }
+.of-visible     { overflow: visible; }
+.of-scroll      { overflow: scroll; }
+
+.of-x-auto      { overflow-x: auto; }
+.of-x-hidden    { overflow-x: hidden; }
+.of-x-visible   { overflow-x: visible; }
+.of-x-scroll    { overflow-x: scroll; }
+.of-y-auto      { overflow-y: auto; }
+.of-y-hidden    { overflow-y: hidden; }
+.of-y-visible   { overflow-y: visible; }
+.of-y-scroll    { overflow-y: scroll; }
+
+.top-0      { top: 0; }
+.left-0     { left: 0; }
+.right-0    { right: 0; }
+.bottom-0   { bottom: 0; }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--flexbox">Flexbox</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.flex         { display: flex; }
+.flex-inline  { display: inline-flex; }
+
+.flexy            { flex: 1 1 auto; }
+.non-flexy        { flex-grow: 0; flex-shrink: 0; }
+
+.flex-grow        { flex-grow: 1; }
+.flex-non-grow    { flex-grow: 0; }
+
+.flex-shrink      { flex-shrink: 1; }
+.flex-non-shrink  { flex-shrink: 0; }
+
+.flex-basis-auto  { flex-basis: auto; }
+
+.flex-column          { flex-direction: column; }
+.flex-column-reverse  { flex-direction: column-reverse; }
+.flex-row             { flex-direction: row; }
+.flex-row-reverse     { flex-direction: row-reverse; }
+
+.flex-wrap            { flex-wrap: wrap; }
+.flex-wrap-reverse    { flex-wrap: wrap-reverse; }
+.flex-nowrap          { flex-wrap: nowrap; }
+
+.flex-items-start     { align-items: flex-start; }
+.flex-items-end       { align-items: flex-end; }
+.flex-items-center    { align-items: center; }
+.flex-items-baseline  { align-items: baseline; }
+.flex-items-stretch   { align-items: stretch; }
+
+.flex-self-start      { align-self: flex-start; }
+.flex-self-end        { align-self: flex-end; }
+.flex-self-center     { align-self: center; }
+.flex-self-baseline   { align-self: baseline; }
+.flex-self-stretch    { align-self: stretch; }
+
+.flex-justify-start   { justify-content: flex-start; }
+.flex-justify-end     { justify-content: flex-end; }
+.flex-justify-center  { justify-content: center; }
+.flex-justify-between { justify-content: space-between; }
+.flex-justify-around  { justify-content: space-around; }
+.flex-justify-stretch { justify-content: stretch; }
+
+.flex-content-start   { align-content: flex-start; }
+.flex-content-end     { align-content: flex-end; }
+.flex-content-center  { align-content: center; }
+.flex-content-between { align-content: space-between; }
+.flex-content-around  { align-content: space-around; }
+.flex-content-stretch { align-content: stretch; }
+
+.flex-order-0     { order: 0; }
+.flex-order-1     { order: 1; }
+.flex-order-2     { order: 2; }
+.flex-order-3     { order: 3; }
+.flex-order-4     { order: 4; }
+.flex-order-5     { order: 5; }
+.flex-order-6     { order: 6; }
+.flex-order-7     { order: 7; }
+.flex-order-8     { order: 8; }
+.flex-order-9     { order: 9; }
+.flex-order-10    { order: 10; }
+.flex-order-10000 { order: 10000; }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--float">Floats</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.fl-left   { float: left; }
+.fl-right  { float: right; }
+.fl-none   { float: none; }
+
+.cl-left   { clear: left; }
+.cl-right  { clear: right; }
+.cl-both   { clear: both; }
+.cl-none   { clear: none; }
+
+.clearfix  { *zoom: 1; }
+.clearfix:before,
+.clearfix:after { content: &#39; &#39;; display: table; }
+.clearfix:after { clear: both; }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--link">Links</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.link          { transition: color .2s ease-in; text-decoration: none; }
+.link:link     { transition: color .2s ease-in; }
+.link:visited  { transition: color .2s ease-in; }
+.link:hover    { transition: color .2s ease-in; }
+.link:active   { transition: color .2s ease-in; }
+.link:focus    { transition: color .2s ease-in; outline: 1px dotted currentColor; }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--list">Lists</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.ls-none     { list-style: none; }
+
+.ls-inside   { list-style-position: inside; }
+.ls-outside  { list-style-position: outside; }
+
+.ls-disc     { list-style-type: disc; }
+.ls-circle   { list-style-type: circle; }
+.ls-square   { list-style-type: square; }
+.ls-decimal  { list-style-type: decimal; }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--opacity">Opacity</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.o-0    { opacity: 0; }
+.o-01   { opacity: .01; }
+.o-02   { opacity: .02; }
+.o-03   { opacity: .03; }
+.o-04   { opacity: .04; }
+.o-05   { opacity: .05; }
+.o-06   { opacity: .06; }
+.o-07   { opacity: .07; }
+.o-08   { opacity: .08; }
+.o-09   { opacity: .09; }
+.o-10   { opacity: .1; }
+.o-20   { opacity: .2; }
+.o-30   { opacity: .3; }
+.o-40   { opacity: .4; }
+.o-50   { opacity: .5; }
+.o-60   { opacity: .6; }
+.o-70   { opacity: .7; }
+.o-80   { opacity: .8; }
+.o-90   { opacity: .9; }
+.o-100  { opacity: 1; }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--outline">Outline</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.outline-none { outline: none; }
+
+.os-none      { outline-style: none; }
+.os-auto      { outline-style: auto; }
+.os-dotted    { outline-style: dotted; }
+.os-dashed    { outline-style: dashed; }
+.os-solid     { outline-style: solid; }
+.os-double    { outline-style: double; }
+.os-groove    { outline-style: groove; }
+.os-ridge     { outline-style: ridge; }
+.os-inset     { outline-style: inset; }
+.os-outset    { outline-style: outset; }
+
+.ow-0    { outline-width: 0; }
+.ow-1    { outline-width: 1px; }
+.ow-2    { outline-width: 2px; }
+.ow-3    { outline-width: 3px; }
+.ow-4    { outline-width: 4px; }
+.ow-5    { outline-width: 5px; }
+
+.oc-transparent  { outline-color: transparent; }
+.oc-white        { outline-color: var(--white); }
+.oc-black        { outline-color: var(--black); }
+.oc-red          { outline-color: var(--red); }
+.oc-orange       { outline-color: var(--orange); }
+.oc-yellow       { outline-color: var(--yellow); }
+.oc-yellow-green { outline-color: var(--yellow-green); }
+.oc-green        { outline-color: var(--green); }
+.oc-green-cyan   { outline-color: var(--green-cyan); }
+.oc-cyan         { outline-color: var(--cyan); }
+.oc-cyan-blue    { outline-color: var(--cyan-blue); }
+.oc-blue         { outline-color: var(--blue); }
+.oc-blue-magenta { outline-color: var(--blue-magenta); }
+.oc-magenta      { outline-color: var(--magenta); }
+.oc-magenta-red  { outline-color: var(--magenta-red); }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--spacing">Spacing</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.mt-zero          { margin-top: var(--spacing-none); }
+.mt-tiny          { margin-top: var(--spacing-tiny); }
+.mt-tiny-xl       { margin-top: var(--spacing-tiny-xl); }
+.mt-tiny-xxl      { margin-top: var(--spacing-tiny-xxl); }
+.mt-small         { margin-top: var(--spacing-small); }
+.mt-small-xl      { margin-top: var(--spacing-small-xl); }
+.mt-small-xxl     { margin-top: var(--spacing-small-xxl); }
+.mt-small-xxxl    { margin-top: var(--spacing-small-xxxl); }
+.mt-normal        { margin-top: var(--spacing-normal); }
+.mt-normal-xl     { margin-top: var(--spacing-normal-xl); }
+.mt-normal-xxl    { margin-top: var(--spacing-normal-xxl); }
+.mt-normal-xxxl   { margin-top: var(--spacing-normal-xxxl); }
+.mt-medium        { margin-top: var(--spacing-medium); }
+.mt-medium-xl     { margin-top: var(--spacing-medium-xl); }
+.mt-medium-xxl    { margin-top: var(--spacing-medium-xxl); }
+.mt-medium-xxxl   { margin-top: var(--spacing-medium-xxxl); }
+.mt-large         { margin-top: var(--spacing-large); }
+.mt-large-xl      { margin-top: var(--spacing-large-xl); }
+.mt-large-xxl     { margin-top: var(--spacing-large-xxl); }
+.mt-large-xxxl    { margin-top: var(--spacing-large-xxxl); }
+.mt-huge          { margin-top: var(--spacing-large); }
+.mt-huge-xl       { margin-top: var(--spacing-huge-xl); }
+.mt-huge-xxl      { margin-top: var(--spacing-huge-xxl); }
+.mt-huge-xxxl     { margin-top: var(--spacing-huge-xxxl); }
+
+.mb-zero          { margin-bottom: var(--spacing-none); }
+.mb-tiny          { margin-bottom: var(--spacing-tiny); }
+.mb-tiny-xl       { margin-bottom: var(--spacing-tiny-xl); }
+.mb-tiny-xxl      { margin-bottom: var(--spacing-tiny-xxl); }
+.mb-small         { margin-bottom: var(--spacing-small); }
+.mb-small-xl      { margin-bottom: var(--spacing-small-xl); }
+.mb-small-xxl     { margin-bottom: var(--spacing-small-xxl); }
+.mb-small-xxxl    { margin-bottom: var(--spacing-small-xxxl); }
+.mb-normal        { margin-bottom: var(--spacing-normal); }
+.mb-normal-xl     { margin-bottom: var(--spacing-normal-xl); }
+.mb-normal-xxl    { margin-bottom: var(--spacing-normal-xxl); }
+.mb-normal-xxxl   { margin-bottom: var(--spacing-normal-xxxl); }
+.mb-medium        { margin-bottom: var(--spacing-medium); }
+.mb-medium-xl     { margin-bottom: var(--spacing-medium-xl); }
+.mb-medium-xxl    { margin-bottom: var(--spacing-medium-xxl); }
+.mb-medium-xxxl   { margin-bottom: var(--spacing-medium-xxxl); }
+.mb-large         { margin-bottom: var(--spacing-large); }
+.mb-large-xl      { margin-bottom: var(--spacing-large-xl); }
+.mb-large-xxl     { margin-bottom: var(--spacing-large-xxl); }
+.mb-large-xxxl    { margin-bottom: var(--spacing-large-xxxl); }
+.mb-huge          { margin-bottom: var(--spacing-large); }
+.mb-huge-xl       { margin-bottom: var(--spacing-huge-xl); }
+.mb-huge-xxl      { margin-bottom: var(--spacing-huge-xxl); }
+.mb-huge-xxxl     { margin-bottom: var(--spacing-huge-xxxl); }
+
+.ml-auto          { margin-left: auto; }
+.ml-zero          { margin-left: var(--spacing-none); }
+.ml-tiny          { margin-left: var(--spacing-tiny); }
+.ml-tiny-xl       { margin-left: var(--spacing-tiny-xl); }
+.ml-tiny-xxl      { margin-left: var(--spacing-tiny-xxl); }
+.ml-small         { margin-left: var(--spacing-small); }
+.ml-small-xl      { margin-left: var(--spacing-small-xl); }
+.ml-small-xxl     { margin-left: var(--spacing-small-xxl); }
+.ml-small-xxxl    { margin-left: var(--spacing-small-xxxl); }
+.ml-normal        { margin-left: var(--spacing-normal); }
+.ml-normal-xl     { margin-left: var(--spacing-normal-xl); }
+.ml-normal-xxl    { margin-left: var(--spacing-normal-xxl); }
+.ml-normal-xxxl   { margin-left: var(--spacing-normal-xxxl); }
+.ml-medium        { margin-left: var(--spacing-medium); }
+.ml-medium-xl     { margin-left: var(--spacing-medium-xl); }
+.ml-medium-xxl    { margin-left: var(--spacing-medium-xxl); }
+.ml-medium-xxxl   { margin-left: var(--spacing-medium-xxxl); }
+.ml-large         { margin-left: var(--spacing-large); }
+.ml-large-xl      { margin-left: var(--spacing-large-xl); }
+.ml-large-xxl     { margin-left: var(--spacing-large-xxl); }
+.ml-large-xxxl    { margin-left: var(--spacing-large-xxxl); }
+.ml-huge          { margin-left: var(--spacing-large); }
+.ml-huge-xl       { margin-left: var(--spacing-huge-xl); }
+.ml-huge-xxl      { margin-left: var(--spacing-huge-xxl); }
+.ml-huge-xxxl     { margin-left: var(--spacing-huge-xxxl); }
+
+.mr-auto          { margin-right: auto; }
+.mr-zero          { margin-right: var(--spacing-none); }
+.mr-tiny          { margin-right: var(--spacing-tiny); }
+.mr-tiny-xl       { margin-right: var(--spacing-tiny-xl); }
+.mr-tiny-xxl      { margin-right: var(--spacing-tiny-xxl); }
+.mr-small         { margin-right: var(--spacing-small); }
+.mr-small-xl      { margin-right: var(--spacing-small-xl); }
+.mr-small-xxl     { margin-right: var(--spacing-small-xxl); }
+.mr-small-xxxl    { margin-right: var(--spacing-small-xxxl); }
+.mr-normal        { margin-right: var(--spacing-normal); }
+.mr-normal-xl     { margin-right: var(--spacing-normal-xl); }
+.mr-normal-xxl    { margin-right: var(--spacing-normal-xxl); }
+.mr-normal-xxxl   { margin-right: var(--spacing-normal-xxxl); }
+.mr-medium        { margin-right: var(--spacing-medium); }
+.mr-medium-xl     { margin-right: var(--spacing-medium-xl); }
+.mr-medium-xxl    { margin-right: var(--spacing-medium-xxl); }
+.mr-medium-xxxl   { margin-right: var(--spacing-medium-xxxl); }
+.mr-large         { margin-right: var(--spacing-large); }
+.mr-large-xl      { margin-right: var(--spacing-large-xl); }
+.mr-large-xxl     { margin-right: var(--spacing-large-xxl); }
+.mr-large-xxxl    { margin-right: var(--spacing-large-xxxl); }
+.mr-huge          { margin-right: var(--spacing-large); }
+.mr-huge-xl       { margin-right: var(--spacing-huge-xl); }
+.mr-huge-xxl      { margin-right: var(--spacing-huge-xxl); }
+.mr-huge-xxxl     { margin-right: var(--spacing-huge-xxxl); }
+
+.m-auto           { margin-left: auto; margin-right:auto; }
+.m-zero           { margin: var(--spacing-none); }
+.m-tiny           { margin: var(--spacing-tiny); }
+.m-tiny-xl        { margin: var(--spacing-tiny-xl); }
+.m-tiny-xxl       { margin: var(--spacing-tiny-xxl); }
+.m-small          { margin: var(--spacing-small); }
+.m-small-xl       { margin: var(--spacing-small-xl); }
+.m-small-xxl      { margin: var(--spacing-small-xxl); }
+.m-small-xxxl     { margin: var(--spacing-small-xxxl); }
+.m-normal         { margin: var(--spacing-normal); }
+.m-normal-xl      { margin: var(--spacing-normal-xl); }
+.m-normal-xxl     { margin: var(--spacing-normal-xxl); }
+.m-normal-xxxl    { margin: var(--spacing-normal-xxxl); }
+.m-medium         { margin: var(--spacing-medium); }
+.m-medium-xl      { margin: var(--spacing-medium-xl); }
+.m-medium-xxl     { margin: var(--spacing-medium-xxl); }
+.m-medium-xxxl    { margin: var(--spacing-medium-xxxl); }
+.m-large          { margin: var(--spacing-large); }
+.m-large-xl       { margin: var(--spacing-large-xl); }
+.m-large-xxl      { margin: var(--spacing-large-xxl); }
+.m-large-xxxl     { margin: var(--spacing-large-xxxl); }
+.m-huge           { margin: var(--spacing-large); }
+.m-huge-xl        { margin: var(--spacing-huge-xl); }
+.m-huge-xxl       { margin: var(--spacing-huge-xxl); }
+.m-huge-xxxl      { margin: var(--spacing-huge-xxxl); }
+
+.pt-zero          { padding-top: var(--spacing-none); }
+.pt-tiny          { padding-top: var(--spacing-tiny); }
+.pt-tiny-xl       { padding-top: var(--spacing-tiny-xl); }
+.pt-tiny-xxl      { padding-top: var(--spacing-tiny-xxl); }
+.pt-small         { padding-top: var(--spacing-small); }
+.pt-small-xl      { padding-top: var(--spacing-small-xl); }
+.pt-small-xxl     { padding-top: var(--spacing-small-xxl); }
+.pt-small-xxxl    { padding-top: var(--spacing-small-xxxl); }
+.pt-normal        { padding-top: var(--spacing-normal); }
+.pt-normal-xl     { padding-top: var(--spacing-normal-xl); }
+.pt-normal-xxl    { padding-top: var(--spacing-normal-xxl); }
+.pt-normal-xxxl   { padding-top: var(--spacing-normal-xxxl); }
+.pt-medium        { padding-top: var(--spacing-medium); }
+.pt-medium-xl     { padding-top: var(--spacing-medium-xl); }
+.pt-medium-xxl    { padding-top: var(--spacing-medium-xxl); }
+.pt-medium-xxxl   { padding-top: var(--spacing-medium-xxxl); }
+.pt-large         { padding-top: var(--spacing-large); }
+.pt-large-xl      { padding-top: var(--spacing-large-xl); }
+.pt-large-xxl     { padding-top: var(--spacing-large-xxl); }
+.pt-large-xxxl    { padding-top: var(--spacing-large-xxxl); }
+.pt-huge          { padding-top: var(--spacing-large); }
+.pt-huge-xl       { padding-top: var(--spacing-huge-xl); }
+.pt-huge-xxl      { padding-top: var(--spacing-huge-xxl); }
+.pt-huge-xxxl     { padding-top: var(--spacing-huge-xxxl); }
+
+.pb-zero          { padding-bottom: var(--spacing-none); }
+.pb-tiny          { padding-bottom: var(--spacing-tiny); }
+.pb-tiny-xl       { padding-bottom: var(--spacing-tiny-xl); }
+.pb-tiny-xxl      { padding-bottom: var(--spacing-tiny-xxl); }
+.pb-small         { padding-bottom: var(--spacing-small); }
+.pb-small-xl      { padding-bottom: var(--spacing-small-xl); }
+.pb-small-xxl     { padding-bottom: var(--spacing-small-xxl); }
+.pb-small-xxxl    { padding-bottom: var(--spacing-small-xxxl); }
+.pb-normal        { padding-bottom: var(--spacing-normal); }
+.pb-normal-xl     { padding-bottom: var(--spacing-normal-xl); }
+.pb-normal-xxl    { padding-bottom: var(--spacing-normal-xxl); }
+.pb-normal-xxxl   { padding-bottom: var(--spacing-normal-xxxl); }
+.pb-medium        { padding-bottom: var(--spacing-medium); }
+.pb-medium-xl     { padding-bottom: var(--spacing-medium-xl); }
+.pb-medium-xxl    { padding-bottom: var(--spacing-medium-xxl); }
+.pb-medium-xxxl   { padding-bottom: var(--spacing-medium-xxxl); }
+.pb-large         { padding-bottom: var(--spacing-large); }
+.pb-large-xl      { padding-bottom: var(--spacing-large-xl); }
+.pb-large-xxl     { padding-bottom: var(--spacing-large-xxl); }
+.pb-large-xxxl    { padding-bottom: var(--spacing-large-xxxl); }
+.pb-huge          { padding-bottom: var(--spacing-large); }
+.pb-huge-xl       { padding-bottom: var(--spacing-huge-xl); }
+.pb-huge-xxl      { padding-bottom: var(--spacing-huge-xxl); }
+.pb-huge-xxxl     { padding-bottom: var(--spacing-huge-xxxl); }
+
+.pl-zero          { padding-left: var(--spacing-none); }
+.pl-tiny          { padding-left: var(--spacing-tiny); }
+.pl-tiny-xl       { padding-left: var(--spacing-tiny-xl); }
+.pl-tiny-xxl      { padding-left: var(--spacing-tiny-xxl); }
+.pl-small         { padding-left: var(--spacing-small); }
+.pl-small-xl      { padding-left: var(--spacing-small-xl); }
+.pl-small-xxl     { padding-left: var(--spacing-small-xxl); }
+.pl-small-xxxl    { padding-left: var(--spacing-small-xxxl); }
+.pl-normal        { padding-left: var(--spacing-normal); }
+.pl-normal-xl     { padding-left: var(--spacing-normal-xl); }
+.pl-normal-xxl    { padding-left: var(--spacing-normal-xxl); }
+.pl-normal-xxxl   { padding-left: var(--spacing-normal-xxxl); }
+.pl-medium        { padding-left: var(--spacing-medium); }
+.pl-medium-xl     { padding-left: var(--spacing-medium-xl); }
+.pl-medium-xxl    { padding-left: var(--spacing-medium-xxl); }
+.pl-medium-xxxl   { padding-left: var(--spacing-medium-xxxl); }
+.pl-large         { padding-left: var(--spacing-large); }
+.pl-large-xl      { padding-left: var(--spacing-large-xl); }
+.pl-large-xxl     { padding-left: var(--spacing-large-xxl); }
+.pl-large-xxxl    { padding-left: var(--spacing-large-xxxl); }
+.pl-huge          { padding-left: var(--spacing-large); }
+.pl-huge-xl       { padding-left: var(--spacing-huge-xl); }
+.pl-huge-xxl      { padding-left: var(--spacing-huge-xxl); }
+.pl-huge-xxxl     { padding-left: var(--spacing-huge-xxxl); }
+
+.pr-zero          { padding-right: var(--spacing-none); }
+.pr-tiny          { padding-right: var(--spacing-tiny); }
+.pr-tiny-xl       { padding-right: var(--spacing-tiny-xl); }
+.pr-tiny-xxl      { padding-right: var(--spacing-tiny-xxl); }
+.pr-small         { padding-right: var(--spacing-small); }
+.pr-small-xl      { padding-right: var(--spacing-small-xl); }
+.pr-small-xxl     { padding-right: var(--spacing-small-xxl); }
+.pr-small-xxxl    { padding-right: var(--spacing-small-xxxl); }
+.pr-normal        { padding-right: var(--spacing-normal); }
+.pr-normal-xl     { padding-right: var(--spacing-normal-xl); }
+.pr-normal-xxl    { padding-right: var(--spacing-normal-xxl); }
+.pr-normal-xxxl   { padding-right: var(--spacing-normal-xxxl); }
+.pr-medium        { padding-right: var(--spacing-medium); }
+.pr-medium-xl     { padding-right: var(--spacing-medium-xl); }
+.pr-medium-xxl    { padding-right: var(--spacing-medium-xxl); }
+.pr-medium-xxxl   { padding-right: var(--spacing-medium-xxxl); }
+.pr-large         { padding-right: var(--spacing-large); }
+.pr-large-xl      { padding-right: var(--spacing-large-xl); }
+.pr-large-xxl     { padding-right: var(--spacing-large-xxl); }
+.pr-large-xxxl    { padding-right: var(--spacing-large-xxxl); }
+.pr-huge          { padding-right: var(--spacing-large); }
+.pr-huge-xl       { padding-right: var(--spacing-huge-xl); }
+.pr-huge-xxl      { padding-right: var(--spacing-huge-xxl); }
+.pr-huge-xxxl     { padding-right: var(--spacing-huge-xxxl); }
+
+.p-zero           { padding: var(--spacing-none); }
+.p-tiny           { padding: var(--spacing-tiny); }
+.p-tiny-xl        { padding: var(--spacing-tiny-xl); }
+.p-tiny-xxl       { padding: var(--spacing-tiny-xxl); }
+.p-small          { padding: var(--spacing-small); }
+.p-small-xl       { padding: var(--spacing-small-xl); }
+.p-small-xxl      { padding: var(--spacing-small-xxl); }
+.p-small-xxxl     { padding: var(--spacing-small-xxxl); }
+.p-normal         { padding: var(--spacing-normal); }
+.p-normal-xl      { padding: var(--spacing-normal-xl); }
+.p-normal-xxl     { padding: var(--spacing-normal-xxl); }
+.p-normal-xxxl    { padding: var(--spacing-normal-xxxl); }
+.p-medium         { padding: var(--spacing-medium); }
+.p-medium-xl      { padding: var(--spacing-medium-xl); }
+.p-medium-xxl     { padding: var(--spacing-medium-xxl); }
+.p-medium-xxxl    { padding: var(--spacing-medium-xxxl); }
+.p-large          { padding: var(--spacing-large); }
+.p-large-xl       { padding: var(--spacing-large-xl); }
+.p-large-xxl      { padding: var(--spacing-large-xxl); }
+.p-large-xxxl     { padding: var(--spacing-large-xxxl); }
+.p-huge           { padding: var(--spacing-large); }
+.p-huge-xl        { padding: var(--spacing-huge-xl); }
+.p-huge-xxl       { padding: var(--spacing-huge-xxl); }
+.p-huge-xxxl      { padding: var(--spacing-huge-xxxl); }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--table">Tables</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.b-collapse {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--typography">Typography</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.sans  { font-family: var(--font-family-sans); }
+.serif { font-family: var(--font-family-serif); }
+.mono  { font-family: var(--font-family-mono); }
+
+.text-center   { text-align: center; }
+.text-left     { text-align: left; }
+.text-right    { text-align: right; }
+.text-justify  { text-align: justify; }
+
+.text-normal     { font-style: normal; }
+.text-italic     { font-style: italic; }
+
+.text-normalcase  { text-transform: none; }
+.text-lowercase   { text-transform: lowercase; }
+.text-uppercase   { text-transform: uppercase; }
+.text-capitalize  { text-transform: capitalize; }
+
+.text-strike        { text-decoration: line-through; }
+.text-underline     { text-decoration: underline; }
+.text-no-underline  { text-decoration: none; }
+
+.text-tight     { letter-spacing: var(--letter-spacing-tight); }
+.text-compact   { letter-spacing: var(--letter-spacing-compact); }
+.text-spread    { letter-spacing: var(--letter-spacing-spread); }
+
+.ws-normal  { white-space: normal; }
+.ws-nowrap  { white-space: nowrap; }
+.ws-pre     { white-space: pre; }
+
+.wb-normal  { word-break: normal; }
+.wb-break   { word-break: break-all; }
+.wb-keep    { word-break: keep-all; }
+
+.fw-tiny        { font-weight: 200; }
+.fw-small       { font-weight: 300; }
+.fw-normal      { font-weight: 400; }
+.fw-medium      { font-weight: 500; }
+.fw-semi-bold   { font-weight: 600; }
+.fw-bold        { font-weight: 700; }
+
+.fs-zero         { font-size: 0; }
+.fs-base         { font-size: var(--font-size-base); }
+
+.fs-tiny         { font-size: var(--font-size-tiny); }
+.fs-tiny-xl      { font-size: var(--font-size-tiny-xl); }
+.fs-tiny-xxl     { font-size: var(--font-size-tiny-xxl); }
+.fs-tiny-xxxl    { font-size: var(--font-size-tiny-xxxl); }
+.fs-small        { font-size: var(--font-size-small); }
+.fs-small-xl     { font-size: var(--font-size-small-xl); }
+.fs-small-xxl    { font-size: var(--font-size-small-xxl); }
+.fs-small-xxxl   { font-size: var(--font-size-small-xxxl); }
+.fs-normal       { font-size: var(--font-size-normal); }
+.fs-normal-xl    { font-size: var(--font-size-normal-xl); }
+.fs-normal-xxl   { font-size: var(--font-size-normal-xxl); }
+.fs-normal-xxxl  { font-size: var(--font-size-normal-xxxl); }
+.fs-medium       { font-size: var(--font-size-medium); }
+.fs-medium-xl    { font-size: var(--font-size-medium-xl); }
+.fs-medium-xxl   { font-size: var(--font-size-medium-xxl); }
+.fs-medium-xxxl  { font-size: var(--font-size-medium-xxxl); }
+.fs-large        { font-size: var(--font-size-large); }
+.fs-large-xl     { font-size: var(--font-size-large-xl); }
+.fs-large-xxl    { font-size: var(--font-size-large-xxl); }
+.fs-large-xxxl   { font-size: var(--font-size-large-xxxl); }
+.fs-huge         { font-size: var(--font-size-huge); }
+.fs-huge-xl      { font-size: var(--font-size-huge-xl); }
+.fs-huge-xxl     { font-size: var(--font-size-huge-xxl); }
+
+.lh-base      { line-height: var(--line-height-normal); }
+
+.lh-tiny      { line-height: var(--line-height-tiny); }
+.lh-small     { line-height: var(--line-height-small); }
+.lh-normal    { line-height: var(--line-height-normal); }
+.lh-medium    { line-height: var(--line-height-medium); }
+.lh-large     { line-height: var(--line-height-large); }
+.lh-huge      { line-height: var(--line-height-huge); }
+.lh-huge-xl   { line-height: var(--line-height-huge-xl); }
+.lh-huge-xxl  { line-height: var(--line-height-huge-xxl); }
+    </code></pre>
+</div>
+        
+        <div>
+    <h3 id="src--z-index">Z-index</h3>
+    
+    <pre class="lh-tiny m-zero fs-small"><code>
+.z--2      { z-index: -2; }
+.z--1      { z-index: -1; }
+.z-0       { z-index: 0; }
+.z-1       { z-index: 1; }
+.z-2       { z-index: 2; }
+.z-3       { z-index: 3; }
+.z-4       { z-index: 4; }
+.z-5       { z-index: 5; }
+
+.z-10      { z-index: 10; }
+.z-20      { z-index: 20; }
+.z-30      { z-index: 30; }
+.z-40      { z-index: 40; }
+.z-50      { z-index: 50; }
+.z-60      { z-index: 60; }
+.z-70      { z-index: 70; }
+.z-80      { z-index: 80; }
+.z-90      { z-index: 90; }
+.z-100     { z-index: 100; }
+.z-1000    { z-index: 1000; }
+.z-10000   { z-index: 10000; }
+.z-100000  { z-index: 100000; }
+    </code></pre>
+</div>
+        
+    </div>
+</div>
+<div class="fixed right-0 bottom-0 pl-normal pr-normal pt-small pb-small fs-small black-20">
+    <span>Made with</span>
+    <a class="black-20" href="https://ysegorov.github.io/wt/" rel="noopener">wt</a>
+</div>
+
+
+        
+
+        
+    </body>
+</html>
