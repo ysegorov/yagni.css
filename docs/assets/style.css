@@ -1,34 +1,6 @@
 @import "./sanitize";
 @import "../../yagni.css";
 
-:root {
-    --color-red: hwb(0, 27%, 10%);
-    --color-orange: hwb(30, 27%, 10%);
-    --color-yellow: hwb(60, 27%, 10%);
-    --color-yellow-green: hwb(90, 27%, 10%);
-    --color-green: hwb(120, 27%, 10%);
-    --color-green-cyan: hwb(150, 27%, 10%);
-    --color-cyan: hwb(180, 27%, 10%);
-    --color-cyan-blue: hwb(210, 27%, 10%);
-    --color-blue: hwb(240, 27%, 10%);
-    --color-blue-magenta: hwb(270, 27%, 10%);
-    --color-magenta: hwb(300, 27%, 10%);
-    --color-magenta-red: hwb(330, 27%, 10%);
-
-    --size-02: 2rem;
-    --size-04: 4rem;
-    --size-06: 6rem;
-    --size-08: 8rem;
-    --size-10: 10rem;
-    --size-12: 12rem;
-    --size-18: 18rem;
-    --size-24: 24rem;
-    --size-30: 30rem;
-    --size-36: 36rem;
-    --size-42: 42rem;
-    --size-48: 48rem;
-    --size-54: 54rem;
-}
 
 .link:hover,
 .link:active,
@@ -41,12 +13,6 @@
 .maxw-42 {
     max-width: var(--size-42);
 }
-.flex-basis-50 {
-    flex-basis: 50%;
-}
 .top-3r {
-    top: 3rem;
-}
-.letter-spacing-normal {
-    letter-spacing: normal;
+    top: var(--size-03);
 }

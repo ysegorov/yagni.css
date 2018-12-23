@@ -339,11 +339,13 @@ textarea,
 
 .text-no-underline{ text-decoration:none; }
 
-.text-tight{ letter-spacing:-.1em; }
+.letters-tight{ letter-spacing:-.1em; }
 
-.text-compact{ letter-spacing:-.05em; }
+.letters-compact{ letter-spacing:-.05em; }
 
-.text-spread{ letter-spacing:.25em; }
+.letters-spread{ letter-spacing:.25em; }
+
+.letters-normal{ letter-spacing:normal; }
 
 .ws-normal{ white-space:normal; }
 
@@ -1347,38 +1349,23 @@ textarea,
 
 .bg-magenta-red{ background-color:rgb(230, 69, 149); }
 
-.bg-center{
-    background-repeat:no-repeat;
-    background-position:center center;
-}
+.bg-center{ background-repeat:no-repeat; background-position:center center; }
 
-.bg-right{
-    background-repeat:no-repeat;
-    background-position:center right;
-}
+.bg-right{ background-repeat:no-repeat; background-position:center right; }
 
-.bg-left{
-    background-repeat:no-repeat;
-    background-position:center left;
-}
+.bg-left{ background-repeat:no-repeat; background-position:center left; }
 
-.bg-top{
-    background-repeat:no-repeat;
-    background-position:center top;
-}
+.bg-top{ background-repeat:no-repeat; background-position:center top; }
 
-.bg-bottom{
-    background-repeat:no-repeat;
-    background-position:center bottom;
-}
+.bg-bottom{ background-repeat:no-repeat; background-position:center bottom; }
 
-.bg-cover{
-    background-size:cover;
-}
+.bg-size-cover{ background-size:cover; }
 
-.bg-contain{
-    background-size:contain;
-}
+.bg-size-contain{ background-size:contain; }
+
+.bg-size-auto{ background-size:auto; }
+
+.bg-size-unset{ background-size:unset; }
 
 .b-none{ border:none; }
 
@@ -1507,6 +1494,24 @@ textarea,
 
 .flex-basis-auto{ flex-basis:auto; }
 
+.flex-basis-10{ flex-basis:10%; }
+
+.flex-basis-20{ flex-basis:20%; }
+
+.flex-basis-30{ flex-basis:30%; }
+
+.flex-basis-40{ flex-basis:40%; }
+
+.flex-basis-50{ flex-basis:50%; }
+
+.flex-basis-60{ flex-basis:60%; }
+
+.flex-basis-70{ flex-basis:70%; }
+
+.flex-basis-80{ flex-basis:80%; }
+
+.flex-basis-90{ flex-basis:90%; }
+
 .flex-column{ flex-direction:column; }
 
 .flex-column-reverse{ flex-direction:column-reverse; }
@@ -1600,6 +1605,8 @@ textarea,
 .link:active{ transition:color .2s ease-in; }
 
 .link:focus{ transition:color .2s ease-in; outline:1px dotted currentColor; }
+
+.pointer{ cursor:pointer; }
 
 .ls-none{ list-style:none; }
 
@@ -1719,10 +1726,7 @@ textarea,
 
 .oc-magenta-red{ outline-color:rgb(230, 69, 149); }
 
-.b-collapse{
-    border-collapse:collapse;
-    border-spacing:0;
-}
+.b-collapse{ border-collapse:collapse; border-spacing:0; }
 
 .z--2{ z-index:-2; }
 
@@ -1788,14 +1792,6 @@ textarea,
     max-width:42rem;
 }
 
-.flex-basis-50{
-    flex-basis:50%;
-}
-
 .top-3r{
     top:3rem;
-}
-
-.letter-spacing-normal{
-    letter-spacing:normal;
 }
