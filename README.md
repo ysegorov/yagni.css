@@ -128,9 +128,9 @@ $ postcss --env production project.css >bundle.min.css
 ```
 
 
-## Documentation
+## Reference
 
-Not available yet, please check sources.
+Available [online][docs].
 
 
 ## License
@@ -140,3 +140,4 @@ Not available yet, please check sources.
 
 [postcss]: https://postcss.org
 [unlicense]: http://unlicense.org
+[docs]: https://ysegorov.github.io/yagni.css/
