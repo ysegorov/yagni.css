@@ -3,6 +3,12 @@
 
 {% block title %}{{ config.title }}{% endblock %}
 
+{% block head %}
+<link rel="shortcut icon" href="{{ baseurl('/favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ baseurl('/favicon.ico') }}" type="image/x-icon">
+{{ super() }}
+{% endblock %}
+
 {% block content %}
 <div class="sticky top-0 flex flex-justify-between flex-items-center bg-gray-048">
     <h1 class="pl-normal m-zero lh-huge">
