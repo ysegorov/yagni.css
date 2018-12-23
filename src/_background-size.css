@@ -1,7 +1,5 @@
 
-.bg-cover {
-    background-size: cover;
-}
-.bg-contain {
-    background-size: contain;
-}
+.bg-size-cover   { background-size: cover; }
+.bg-size-contain { background-size: contain; }
+.bg-size-auto    { background-size: auto; }
+.bg-size-unset   { background-size: unset; }

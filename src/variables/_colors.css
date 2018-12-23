@@ -77,7 +77,7 @@
     --gray-224: rgb(224, 224, 224);
     --gray-240: rgb(240, 240, 240);
 
-    --red: var(--color-red, hwb(0, 40%, 0%));
+    --red: var(--color-red, hwb(0, 27%, 10%));
     --red-01: color(var(--red) a(1%));
     --red-02: color(var(--red) a(2%));
     --red-03: color(var(--red) a(3%));
@@ -106,7 +106,7 @@
     --red-98: color(var(--red) a(98%));
     --red-99: color(var(--red) a(99%));
 
-    --orange: var(--color-orange, hwb(30, 40%, 0%));
+    --orange: var(--color-orange, hwb(30, 27%, 10%));
     --orange-01: color(var(--orange) a(1%));
     --orange-02: color(var(--orange) a(2%));
     --orange-03: color(var(--orange) a(3%));
@@ -135,7 +135,7 @@
     --orange-98: color(var(--orange) a(98%));
     --orange-99: color(var(--orange) a(99%));
 
-    --yellow: var(--color-yellow, hwb(60, 40%, 0%));
+    --yellow: var(--color-yellow, hwb(60, 27%, 10%));
     --yellow-01: color(var(--yellow) a(1%));
     --yellow-02: color(var(--yellow) a(2%));
     --yellow-03: color(var(--yellow) a(3%));
@@ -164,7 +164,7 @@
     --yellow-98: color(var(--yellow) a(98%));
     --yellow-99: color(var(--yellow) a(99%));
 
-    --yellow-green: var(--color-yellow-green, hwb(90, 40%, 0%));
+    --yellow-green: var(--color-yellow-green, hwb(90, 27%, 10%));
     --yellow-green-01: color(var(--yellow-green) a(1%));
     --yellow-green-02: color(var(--yellow-green) a(2%));
     --yellow-green-03: color(var(--yellow-green) a(3%));
@@ -193,7 +193,7 @@
     --yellow-green-98: color(var(--yellow-green) a(98%));
     --yellow-green-99: color(var(--yellow-green) a(99%));
 
-    --green: var(--color-green, hwb(120, 40%, 0%));
+    --green: var(--color-green, hwb(120, 27%, 10%));
     --green-01: color(var(--green) a(1%));
     --green-02: color(var(--green) a(2%));
     --green-03: color(var(--green) a(3%));
@@ -222,7 +222,7 @@
     --green-98: color(var(--green) a(98%));
     --green-99: color(var(--green) a(99%));
 
-    --green-cyan: var(--color-green-cyan, hwb(150, 40%, 0%));
+    --green-cyan: var(--color-green-cyan, hwb(150, 27%, 10%));
     --green-cyan-01: color(var(--green-cyan) a(1%));
     --green-cyan-02: color(var(--green-cyan) a(2%));
     --green-cyan-03: color(var(--green-cyan) a(3%));
@@ -251,7 +251,7 @@
     --green-cyan-98: color(var(--green-cyan) a(98%));
     --green-cyan-99: color(var(--green-cyan) a(99%));
 
-    --cyan: var(--color-cyan, hwb(180, 40%, 0%));
+    --cyan: var(--color-cyan, hwb(180, 27%, 10%));
     --cyan-01: color(var(--cyan) a(1%));
     --cyan-02: color(var(--cyan) a(2%));
     --cyan-03: color(var(--cyan) a(3%));
@@ -280,7 +280,7 @@
     --cyan-98: color(var(--cyan) a(98%));
     --cyan-99: color(var(--cyan) a(99%));
 
-    --cyan-blue: var(--color-cyan-blue, hwb(210, 40%, 0%));
+    --cyan-blue: var(--color-cyan-blue, hwb(210, 27%, 10%));
     --cyan-blue-01: color(var(--cyan-blue) a(1%));
     --cyan-blue-02: color(var(--cyan-blue) a(2%));
     --cyan-blue-03: color(var(--cyan-blue) a(3%));
@@ -309,7 +309,7 @@
     --cyan-blue-98: color(var(--cyan-blue) a(98%));
     --cyan-blue-99: color(var(--cyan-blue) a(99%));
 
-    --blue: var(--color-blue, hwb(240, 40%, 0%));
+    --blue: var(--color-blue, hwb(240, 27%, 10%));
     --blue-01: color(var(--blue) a(1%));
     --blue-02: color(var(--blue) a(2%));
     --blue-03: color(var(--blue) a(3%));
@@ -338,7 +338,7 @@
     --blue-98: color(var(--blue) a(98%));
     --blue-99: color(var(--blue) a(99%));
 
-    --blue-magenta: var(--color-blue-magenta, hwb(270, 40%, 0%));
+    --blue-magenta: var(--color-blue-magenta, hwb(270, 27%, 10%));
     --blue-magenta-01: color(var(--blue-magenta) a(1%));
     --blue-magenta-02: color(var(--blue-magenta) a(2%));
     --blue-magenta-03: color(var(--blue-magenta) a(3%));
@@ -367,7 +367,7 @@
     --blue-magenta-98: color(var(--blue-magenta) a(98%));
     --blue-magenta-99: color(var(--blue-magenta) a(99%));
 
-    --magenta: var(--color-magenta, hwb(300, 40%, 0%));
+    --magenta: var(--color-magenta, hwb(300, 27%, 10%));
     --magenta-01: color(var(--magenta) a(1%));
     --magenta-02: color(var(--magenta) a(2%));
     --magenta-03: color(var(--magenta) a(3%));
@@ -396,7 +396,7 @@
     --magenta-98: color(var(--magenta) a(98%));
     --magenta-99: color(var(--magenta) a(99%));
 
-    --magenta-red: var(--color-magenta-red, hwb(330, 40%, 0%));
+    --magenta-red: var(--color-magenta-red, hwb(330, 27%, 10%));
     --magenta-red-01: color(var(--magenta-red) a(1%));
     --magenta-red-02: color(var(--magenta-red) a(2%));
     --magenta-red-03: color(var(--magenta-red) a(3%));

@@ -101,7 +101,8 @@
 .mr-huge-xxl      { margin-right: var(--spacing-huge-xxl); }
 .mr-huge-xxxl     { margin-right: var(--spacing-huge-xxxl); }
 
-.m-auto           { margin-left: auto; margin-right:auto; }
+.m-auto           { margin-left: auto; margin-right: auto; }
+
 .m-zero           { margin: var(--spacing-none); }
 .m-tiny           { margin: var(--spacing-tiny); }
 .m-tiny-xl        { margin: var(--spacing-tiny-xl); }

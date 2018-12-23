@@ -5,3 +5,5 @@
 .link:hover    { transition: color .2s ease-in; }
 .link:active   { transition: color .2s ease-in; }
 .link:focus    { transition: color .2s ease-in; outline: 1px dotted currentColor; }
+
+.pointer  { cursor: pointer; }

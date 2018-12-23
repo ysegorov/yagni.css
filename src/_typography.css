@@ -20,9 +20,10 @@
 .text-underline     { text-decoration: underline; }
 .text-no-underline  { text-decoration: none; }
 
-.text-tight     { letter-spacing: var(--letter-spacing-tight); }
-.text-compact   { letter-spacing: var(--letter-spacing-compact); }
-.text-spread    { letter-spacing: var(--letter-spacing-spread); }
+.letters-tight     { letter-spacing: var(--letter-spacing-tight); }
+.letters-compact   { letter-spacing: var(--letter-spacing-compact); }
+.letters-spread    { letter-spacing: var(--letter-spacing-spread); }
+.letters-normal    { letter-spacing: normal; }
 
 .ws-normal  { white-space: normal; }
 .ws-nowrap  { white-space: nowrap; }
